@@ -19,8 +19,8 @@ public final class ViewIF: OOViewWrap {
             ViewOR(
                 condition: condition,
                 conditionChangeListener: InformNothing(),
-                primary: { primary },
-                secondary: { secondary }
+                isTrue: { primary },
+                isFalse: { secondary }
             )
         )
     }

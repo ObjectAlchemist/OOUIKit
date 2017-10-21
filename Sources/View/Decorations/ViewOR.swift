@@ -16,7 +16,10 @@ public final class ViewOR: OOView {
     
     // MARK: init
     
-    public init(condition: OOBool, conditionChangeListener: OOEventInform, primary: @escaping () -> OOView, secondary: @escaping () -> OOView) {
+    public init(condition: OOBool,
+                conditionChangeListener: OOEventInform,
+                isTrue primary: @escaping () -> OOView,
+                isFalse secondary: @escaping () -> OOView) {
         self.condition = condition
         self.conditionChangeListener = conditionChangeListener
         self.primary = primary
@@ -74,8 +77,8 @@ public final class ViewOR: OOView {
 // convenience initializer
 public extension ViewOR {
     
-    public convenience init(condition: OOWritableBool & OOEventInform, primary: @escaping () -> OOView, secondary: @escaping () -> OOView) {
-        self.init(condition: condition, conditionChangeListener: condition, primary: primary, secondary: secondary)
+    public convenience init(condition: OOWritableBool & OOEventInform, isTrue primary: @escaping () -> OOView, isFalse secondary: @escaping () -> OOView) {
+        self.init(condition: condition, conditionChangeListener: condition, isTrue: primary, isFalse: secondary)
     }
     
 }

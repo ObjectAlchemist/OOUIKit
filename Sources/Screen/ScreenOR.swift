@@ -17,7 +17,10 @@ public final class ScreenOR: OOScreen {
     
     // MARK: init
 
-    public init(condition: OOBool, conditionChangeListener: OOEventInform, primary: @escaping (UIViewController) -> OOScreen, secondary: @escaping (UIViewController) -> OOScreen) {
+    public init(condition: OOBool,
+                conditionChangeListener: OOEventInform,
+                isTrue primary: @escaping (UIViewController) -> OOScreen,
+                isFalse secondary: @escaping (UIViewController) -> OOScreen) {
         self.condition = condition
         self.conditionChangeListener = conditionChangeListener
         self.primary = primary
@@ -44,8 +47,8 @@ public final class ScreenOR: OOScreen {
 // convenience initializer
 public extension ScreenOR {
     
-    public convenience init(condition: OOWritableBool & OOEventInform, primary: @escaping (UIViewController) -> OOScreen, secondary: @escaping (UIViewController) -> OOScreen) {
-        self.init(condition: condition, conditionChangeListener: condition, primary: primary, secondary: secondary)
+    public convenience init(condition: OOWritableBool & OOEventInform, isTrue primary: @escaping (UIViewController) -> OOScreen, isFalse secondary: @escaping (UIViewController) -> OOScreen) {
+        self.init(condition: condition, conditionChangeListener: condition, isTrue: primary, isFalse: secondary)
     }
     
 }

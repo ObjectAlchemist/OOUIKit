@@ -15,8 +15,8 @@ public final class ScreenIF: OOScreenWrap {
             ScreenOR(
                 condition: condition,
                 conditionChangeListener: InformNothing(),
-                primary: { _ in primary },
-                secondary: { _ in secondary }
+                isTrue: { _ in primary },
+                isFalse: { _ in secondary }
             )
         )
     }
