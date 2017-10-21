@@ -1,0 +1,28 @@
+Phoenx::Project.new do |project|
+
+    project.project_name = "OOUIKit"
+    project.config_files["Debug"] = "Configuration/Project/Debug.xcconfig"
+    project.config_files["Release"] = "Configuration/Project/Release.xcconfig"
+    project.support_files = ["Configuration/**/*.{xcconfig,plist}", "*.{pxproject}", "Makefile", ".gitignore", "Playground/**/*.playground", "*.md", "LICENSE", "Cartfile*"]
+
+    project.target "OOUIKit", :framework, :ios, '11.0' do |target|
+
+        target.config_files["Debug"] = "Configuration/Target/Debug.xcconfig"
+        target.config_files["Release"] = "Configuration/Target/Release.xcconfig"
+        target.sources = ["Sources/**/*.{swift}"]
+        target.excluded_sources = ["Sources/**/*Spec.{swift}"]
+        target.frameworks = ["Carthage/Build/iOS/OOBase.framework", "Carthage/Build/iOS/OOFoundation.framework"]
+        target.system_frameworks = ["Foundation", "UIKit"]
+        target.system_libraries = []
+
+        target.test_target "OOBaseTests" do |test|
+
+            test.config_files["Debug"] = "Configuration/TargetTests/Debug.xcconfig"
+            test.config_files["Release"] = "Configuration/TargetTests/Release.xcconfig"
+            test.sources = ["Sources/**/*Spec.{swift}"]
+
+        end
+
+    end
+
+end
