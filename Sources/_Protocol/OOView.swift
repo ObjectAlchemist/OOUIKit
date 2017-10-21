@@ -44,7 +44,7 @@ public final class OOViewFake: OOView {
     
 }
 
-public /*abstract*/ class OOViewWrap: OOView {
+open /*abstract*/ class OOViewWrap: OOView {
     
     // MARK: init
     

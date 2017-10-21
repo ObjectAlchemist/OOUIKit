@@ -31,7 +31,7 @@ public final class OOTableCellFake: OOTableCell {
     
 }
 
-public /*abstract*/ class OOTableCellWrap: OOTableCell {
+open /*abstract*/ class OOTableCellWrap: OOTableCell {
     
     // MARK: init
     

@@ -35,7 +35,7 @@ public final class OOAlertFake: OOAlert {
     
 }
 
-public /*abstract*/ class OOAlertWrap: OOAlert {
+open /*abstract*/ class OOAlertWrap: OOAlert {
     
     // MARK: init
     

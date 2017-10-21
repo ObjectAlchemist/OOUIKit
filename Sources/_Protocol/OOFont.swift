@@ -34,7 +34,7 @@ public final class OOFontFake: OOFont {
     
 }
 
-public /*abstract*/ class OOFontWrap: OOFont {
+open /*abstract*/ class OOFontWrap: OOFont {
     
     // MARK: init
     

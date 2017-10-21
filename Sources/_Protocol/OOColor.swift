@@ -35,7 +35,7 @@ public final class OOColorFake: OOColor {
     
 }
 
-public /*abstract*/ class OOColorWrap: OOColor {
+open /*abstract*/ class OOColorWrap: OOColor {
     
     // MARK: init
     

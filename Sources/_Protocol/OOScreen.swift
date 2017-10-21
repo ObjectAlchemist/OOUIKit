@@ -35,7 +35,7 @@ public final class OOScreenFake: OOScreen {
     
 }
 
-public /*abstract*/ class OOScreenWrap: OOScreen {
+open /*abstract*/ class OOScreenWrap: OOScreen {
     
     // MARK: init
     

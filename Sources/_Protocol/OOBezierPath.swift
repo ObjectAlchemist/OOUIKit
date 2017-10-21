@@ -35,7 +35,7 @@ public final class OOBezierPathFake: OOBezierPath {
     
 }
 
-public /*abstract*/ class OOBezierPathWrap: OOBezierPath {
+open /*abstract*/ class OOBezierPathWrap: OOBezierPath {
     
     // MARK: init
     

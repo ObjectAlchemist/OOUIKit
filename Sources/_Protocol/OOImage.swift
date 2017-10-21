@@ -35,7 +35,7 @@ public final class OOImageFake: OOImage {
     
 }
 
-public /*abstract*/ class OOImageWrap: OOImage {
+open /*abstract*/ class OOImageWrap: OOImage {
     
     // MARK: init
     
