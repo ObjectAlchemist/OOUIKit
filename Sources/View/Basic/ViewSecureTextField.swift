@@ -13,7 +13,7 @@ public final class ViewSecureTextField: OOView {
     
     // MARK: init
 
-    init(optDelegate: UITextFieldDelegate?, value: OOWritableString, placeholder: OOString, isLast: Bool) {
+    init(value: OOWritableString, placeholder: OOString, isLast: Bool, optDelegate: UITextFieldDelegate?) {
         self.optDelegate = optDelegate
         self.initialValue = value
         self.editTarget = VrTextFieldTarget(editAction: { text in DoWritableStringSet(text, to: value) })
@@ -69,15 +69,15 @@ public extension ViewSecureTextField {
     }
     
     public convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true) {
-        self.init(optDelegate: nil, value: value, placeholder: placeholder, isLast: isLast)
+        self.init(value: value, placeholder: placeholder, isLast: isLast, optDelegate: nil)
     }
     
-    public convenience init(delegate: UITextFieldDelegate, value: OOWritableString, placeholder: String = "", isLast: Bool = true) {
-        self.init(delegate: delegate, value: value, placeholder: StringConst(placeholder), isLast: isLast)
+    public convenience init(value: OOWritableString, placeholder: String = "", isLast: Bool = true, delegate: UITextFieldDelegate) {
+        self.init(value: value, placeholder: StringConst(placeholder), isLast: isLast, delegate: delegate)
     }
     
-    public convenience init(delegate: UITextFieldDelegate, value: OOWritableString, placeholder: OOString, isLast: Bool = true) {
-        self.init(optDelegate: delegate, value: value, placeholder: placeholder, isLast: isLast)
+    public convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true, delegate: UITextFieldDelegate) {
+        self.init(value: value, placeholder: placeholder, isLast: isLast, optDelegate: delegate)
     }
     
 }

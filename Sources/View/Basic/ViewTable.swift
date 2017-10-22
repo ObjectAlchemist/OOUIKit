@@ -15,13 +15,12 @@ public final class ViewTable: OOView {
     
     // MARK: init
     
-    public init(dataSource: UITableViewDataSource,
-         delegate: UITableViewDelegate,
-         reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+    public init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
          xibReuseIdentifier: [String] = [],
          style: UITableViewStyle = .plain,
-         bundle: Bundle = Bundle.main
-        ) {
+         bundle: Bundle = Bundle.main,
+         dataSource: UITableViewDataSource,
+         delegate: UITableViewDelegate) {
         self.dataSource = dataSource
         self.delegate = delegate
         self.reuseIdentifier = reuseIdentifier
