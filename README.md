@@ -14,6 +14,11 @@ All objects follow these rules:
 - they use dependency injection, but only protocols will be injected
 - they are final, except
     - the 'Wrap' objects, these objects are designed to derive for object compositions
+- they do not end to -Client, -Model, -er
+- they do not provide any optional access
+    - no optionals in protocols
+    - no optionals in public initializers
+- they fail early in case of misuse
 
 ## Usage
 Add it via carthage to your project dependencies.
