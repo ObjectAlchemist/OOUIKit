@@ -8,7 +8,7 @@
 
 import UIKit
 
-public /*abstract*/ class UIScrollViewDelegateWrap: NSObject, UIScrollViewDelegate {
+open /*abstract*/ class UIScrollViewDelegateWrap: NSObject, UIScrollViewDelegate {
     
     // MARK: init
     

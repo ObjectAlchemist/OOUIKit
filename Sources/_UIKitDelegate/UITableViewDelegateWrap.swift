@@ -8,7 +8,7 @@
 
 import UIKit
 
-public /*abstract*/ class UITableViewDelegateWrap: NSObject, UITableViewDelegate {
+open /*abstract*/ class UITableViewDelegateWrap: NSObject, UITableViewDelegate {
     
     // MARK: init
     

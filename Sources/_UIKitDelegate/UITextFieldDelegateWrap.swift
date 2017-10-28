@@ -8,7 +8,7 @@
 
 import UIKit
 
-public /*abstract*/ class UITextFieldDelegateWrap: NSObject, UITextFieldDelegate {
+open /*abstract*/ class UITextFieldDelegateWrap: NSObject, UITextFieldDelegate {
     
     // MARK: init
     

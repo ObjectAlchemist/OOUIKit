@@ -8,7 +8,7 @@
 
 import UIKit
 
-public /*abstract*/ class UITableViewDataSourceWrap: NSObject, UITableViewDataSource {
+open /*abstract*/ class UITableViewDataSourceWrap: NSObject, UITableViewDataSource {
     
     // MARK: init
     
