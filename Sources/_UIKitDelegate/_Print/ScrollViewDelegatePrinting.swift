@@ -22,73 +22,74 @@ public final class ScrollViewDelegatePrinting: NSObject, UIScrollViewDelegate {
 
     public init(_ decorated: UIScrollViewDelegate, filterKey: String = "") {
         self.decorated = decorated
-        self.filterKey = filterKey
+        // add space if exist to separate following log
+        self.filterKey = filterKey.characters.count == 0 ? "" : "\(filterKey) "
     }
     
     // MARK: - protocol: UIScrollViewDelegate
     
     public final func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview didScroll called")
+        printUI("\(filterKey)scrollview didScroll called")
         decorated.scrollViewDidScroll?(scrollView)
     }
     
     public final func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview didZoom called")
+        printUI("\(filterKey)scrollview didZoom called")
         decorated.scrollViewDidZoom?(scrollView)
     }
     
     public final func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview willBeginDragging called")
+        printUI("\(filterKey)scrollview willBeginDragging called")
         decorated.scrollViewWillBeginDragging?(scrollView)
     }
     
     public final func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        printUI("\(filterKey) scrollview willEndDragging called (\n  velocity=\(velocity)\n  targetContentOffset=\(targetContentOffset)\n)")
+        printUI("\(filterKey)scrollview willEndDragging called (\n  velocity=\(velocity)\n  targetContentOffset=\(targetContentOffset)\n)")
         decorated.scrollViewWillEndDragging?(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
     }
     
     public final func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        printUI("\(filterKey) scrollview didEndDragging called (\n  decelerate=\(decelerate)\n)")
+        printUI("\(filterKey)scrollview didEndDragging called (\n  decelerate=\(decelerate)\n)")
         decorated.scrollViewDidEndDragging?(scrollView, willDecelerate: decelerate)
     }
     
     public final func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview willBeginDecelerating called")
+        printUI("\(filterKey)scrollview willBeginDecelerating called")
         decorated.scrollViewWillBeginDecelerating?(scrollView)
     }
     
     public final func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview didEndDecelerating called")
+        printUI("\(filterKey)scrollview didEndDecelerating called")
         decorated.scrollViewDidEndDecelerating?(scrollView)
     }
     
     public final func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview didEndScrollingAnimation called")
+        printUI("\(filterKey)scrollview didEndScrollingAnimation called")
         decorated.scrollViewDidEndScrollingAnimation?(scrollView)
     }
     
     public final func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        printUI("\(filterKey) scrollview viewForZooming called")
+        printUI("\(filterKey)scrollview viewForZooming called")
         return decorated.viewForZooming?(in: scrollView)
     }
     
     public final func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
-        printUI("\(filterKey) scrollview willBeginZooming called (\n  view=\(String(describing: view))\n)")
+        printUI("\(filterKey)scrollview willBeginZooming called (\n  view=\(String(describing: view))\n)")
         decorated.scrollViewWillBeginZooming?(scrollView, with: view)
     }
     
     public final func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        printUI("\(filterKey) scrollview didEndZooming called (\n  view=\(String(describing: view))\n  scale=\(scale)\n)")
+        printUI("\(filterKey)scrollview didEndZooming called (\n  view=\(String(describing: view))\n  scale=\(scale)\n)")
         decorated.scrollViewDidEndZooming?(scrollView, with: view, atScale: scale)
     }
     
     public final func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
-        printUI("\(filterKey) scrollview shouldScrollToTop called")
+        printUI("\(filterKey)scrollview shouldScrollToTop called")
         return decorated.scrollViewShouldScrollToTop?(scrollView) ?? true
     }
     
     public final func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        printUI("\(filterKey) scrollview didScrollToTop called")
+        printUI("\(filterKey)scrollview didScrollToTop called")
         decorated.scrollViewDidScrollToTop?(scrollView)
     }
     

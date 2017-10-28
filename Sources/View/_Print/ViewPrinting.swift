@@ -14,20 +14,21 @@ public final class ViewPrinting: OOView {
     
     public init(_ decorated: OOView, filterKey: String = "") {
         self.decorated = decorated
-        self.filterKey = filterKey
+        // add space if exist to separate following log
+        self.filterKey = filterKey.characters.count == 0 ? "" : "\(filterKey) "
     }
     
     // MARK: - protocol: OOView
     
     public var ui: UIView {
         let ui = decorated.ui
-        printUI("\(filterKey) view created")
+        printUI("\(filterKey)view created")
         return ui
     }
 
     public func setNeedsRefresh() {
         decorated.setNeedsRefresh()
-        printUI("\(filterKey) view updated")
+        printUI("\(filterKey)view updated")
     }
 
     // MARK: - private
