@@ -18,7 +18,7 @@ public final class ViewTextButton: OOView {
     
     // MARK: init
 
-    public init(title: OOString, color: OOColor = ColorDefault(.white), font: OOFont = FontSystem(size: 12), action: OOExecutable) {
+    public init(title: OOString, color: OOColor = ColorWhite, font: OOFont = FontSystem(size: 12), action: OOExecutable) {
         self.title = title
         self.color = color
         self.font = font
@@ -65,7 +65,7 @@ public final class ViewTextButton: OOView {
 // convenience initializer
 public extension ViewTextButton {
     
-    public convenience init(title: String, color: OOColor = ColorDefault(.white), font: OOFont = FontSystem(size: 12), action: OOExecutable) {
+    public convenience init(title: String, color: OOColor = ColorWhite, font: OOFont = FontSystem(size: 12), action: OOExecutable) {
         self.init(title: StringConst(title), color: color, font: font, action: action)
     }
     

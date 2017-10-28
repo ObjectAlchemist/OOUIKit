@@ -16,7 +16,7 @@ public final class ViewActivityIndicator: OOView {
     
     // MARK: init
 
-    public init(action: OOExecutable = DoNothing(), shouldRun: OOBool = BoolConst(true), color: OOColor = ColorDefault(.white), large: OOBool = BoolConst(true)) {
+    public init(action: OOExecutable = DoNothing(), shouldRun: OOBool = BoolConst(true), color: OOColor = ColorWhite, large: OOBool = BoolConst(true)) {
         self.action = action
         self.shouldRun = shouldRun
         self.color = color

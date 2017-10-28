@@ -8,7 +8,25 @@
 
 import UIKit
 
-public enum DefaultColor {
+public let ColorBlack: OOColor = ColorDefault(.black)
+public let ColorDarkGray: OOColor = ColorDefault(.darkGray)
+public let ColorLightGray: OOColor = ColorDefault(.lightGray)
+public let ColorWhite: OOColor = ColorDefault(.white)
+public let ColorGray: OOColor = ColorDefault(.gray)
+public let ColorRed: OOColor = ColorDefault(.red)
+public let ColorGreen: OOColor = ColorDefault(.green)
+public let ColorBlue: OOColor = ColorDefault(.blue)
+public let ColorCyan: OOColor = ColorDefault(.cyan)
+public let ColorYellow: OOColor = ColorDefault(.yellow)
+public let ColorMagenta: OOColor = ColorDefault(.magenta)
+public let ColorOrange: OOColor = ColorDefault(.orange)
+public let ColorPurple: OOColor = ColorDefault(.purple)
+public let ColorBrown: OOColor = ColorDefault(.brown)
+public let ColorClear: OOColor = ColorDefault(.clear)
+public let ColorLightText: OOColor = ColorDefault(.lightText)
+public let ColorDarkText: OOColor = ColorDefault(.darkText)
+
+enum ColorValue {
     
     case black      // 0.0 white
     case darkGray   // 0.333 white
@@ -33,17 +51,17 @@ public enum DefaultColor {
 /**
  A Color object based on a default color from enum
  */
-public final class ColorDefault: OOColor {
+final class ColorDefault: OOColor {
     
     // MARK: init
     
-    public init(_ color: DefaultColor = .white) {
+    init(_ color: ColorValue) {
         self.color = color
     }
     
     // MARK: protocol OOColor
     
-    public var value: UIColor {
+    var value: UIColor {
         switch(color) {
         case .black: return UIColor.black
         case .darkGray: return UIColor.darkGray
@@ -67,6 +85,6 @@ public final class ColorDefault: OOColor {
     
     // MARK: private
     
-    private let color: DefaultColor
+    private let color: ColorValue
     
 }

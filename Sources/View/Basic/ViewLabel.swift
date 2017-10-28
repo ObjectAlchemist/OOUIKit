@@ -16,7 +16,7 @@ public final class ViewLabel: OOView {
     
     // MARK: init
 
-    public init(title: OOString, color: OOColor = ColorDefault(.darkText), font: OOFont = FontSystem(size: 12), textAlignment: NSTextAlignment = .left, numberOfLines: Int = 1) {
+    public init(title: OOString, color: OOColor = ColorDarkText, font: OOFont = FontSystem(size: 12), textAlignment: NSTextAlignment = .left, numberOfLines: Int = 1) {
         self.title = title
         self.color = color
         self.font = font
@@ -64,7 +64,7 @@ public final class ViewLabel: OOView {
 
 public extension ViewLabel {
     
-    public convenience init(title: String, color: OOColor = ColorDefault(.darkText), font: OOFont = FontSystem(size: 12), textAlignment: NSTextAlignment = .left, numberOfLines: Int = 1) {
+    public convenience init(title: String, color: OOColor = ColorDarkText, font: OOFont = FontSystem(size: 12), textAlignment: NSTextAlignment = .left, numberOfLines: Int = 1) {
         self.init(title: StringConst(title), color: color, font: font, textAlignment: textAlignment, numberOfLines: numberOfLines)
     }
     
