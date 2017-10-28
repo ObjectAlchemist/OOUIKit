@@ -28,7 +28,7 @@ public final class ScreenColored: OOScreen {
         if let content = optContent {
             return ColorContainerViewController(color: color, content: content)
         } else {
-            return SimpleViewController(content: ViewColored(), headerTitle: StringConst(""), contentSize: CGSize(width: 0, height: 0))
+            return SimpleViewController(content: ViewColored(color: color), headerTitle: StringConst(""), contentSize: CGSize(width: 0, height: 0))
         }
     }
     
