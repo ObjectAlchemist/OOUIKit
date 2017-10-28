@@ -60,8 +60,10 @@ public final class ScrollViewDelegateSplitting: NSObject, UIScrollViewDelegate {
     }
     
     public final func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        let firstImplementer = delegates.first(where: { $0.responds(to: #selector(UIScrollViewDelegate.viewForZooming(in:))) })
-        return firstImplementer?.viewForZooming!(in: scrollView) ?? nil
+        for delegate in delegates {
+            if let result = delegate.viewForZooming?(in: scrollView) { return result }
+        }
+        return nil
     }
     
     public final func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
@@ -73,8 +75,10 @@ public final class ScrollViewDelegateSplitting: NSObject, UIScrollViewDelegate {
     }
     
     public final func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
-        let firstImplementer = delegates.first(where: { $0.responds(to: #selector(UIScrollViewDelegate.scrollViewShouldScrollToTop(_:))) })
-        return firstImplementer?.scrollViewShouldScrollToTop!(scrollView) ?? true
+        for delegate in delegates {
+            if let result = delegate.scrollViewShouldScrollToTop?(scrollView) { return result }
+        }
+        return true
     }
     
     public final func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
