@@ -20,10 +20,10 @@ public final class TextFieldDelegatePrinting: NSObject, UITextFieldDelegate {
         fatalError("Not supported!")
     }
     
-    public init(_ decorated: UITextFieldDelegate, filterKey: String = "") {
-        self.decorated = decorated
+    public init(markedWith key: String = "", content: UITextFieldDelegate) {
         // add space if exist to separate following log
-        self.filterKey = filterKey.characters.count == 0 ? "" : "\(filterKey) "
+        self.filterKey = key.characters.count == 0 ? "" : "\(key) "
+        self.decorated = content
     }
     
     // MARK: - protocol: UITextFieldDelegate

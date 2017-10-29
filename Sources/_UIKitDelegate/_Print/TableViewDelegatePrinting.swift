@@ -20,10 +20,10 @@ public final class TableViewDelegatePrinting: NSObject, UITableViewDelegate {
         fatalError("Not supported!")
     }
     
-    public init(_ decorated: UITableViewDelegate, filterKey: String = "") {
-        self.decorated = decorated
+    public init(markedWith key: String = "", content: UITableViewDelegate) {
         // add space if exist to separate following log
-        self.filterKey = filterKey.characters.count == 0 ? "" : "\(filterKey) "
+        self.filterKey = key.characters.count == 0 ? "" : "\(key) "
+        self.decorated = content
     }
     
     // MARK: - protocol: UITableViewDelegate

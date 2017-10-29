@@ -12,10 +12,10 @@ public final class ViewPrinting: OOView {
     
     // MARK: - init
     
-    public init(_ decorated: OOView, filterKey: String = "") {
-        self.decorated = decorated
+    public init(markedWith key: String = "", content: OOView) {
         // add space if exist to separate following log
-        self.filterKey = filterKey.characters.count == 0 ? "" : "\(filterKey) "
+        self.filterKey = key.characters.count == 0 ? "" : "\(key) "
+        self.decorated = content
     }
     
     // MARK: - protocol: OOView
