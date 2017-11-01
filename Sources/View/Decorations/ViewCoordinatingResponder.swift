@@ -1,6 +1,6 @@
 //
 //  ViewCoordinatingResponder.swift
-//  OOExamples
+//  OOSwift
 //
 //  Created by Karsten Litsche on 22.10.17.
 //  

@@ -1,6 +1,6 @@
 //
 //  ColorHexSpec.swift
-//  OOUIKit
+//  OOSwift
 //
 //  Created by Karsten Litsche on 01.09.17.
 //  
