@@ -22,7 +22,7 @@ public final class ScrollViewDelegatePrinting: NSObject, UIScrollViewDelegate {
 
     public init(markedWith key: String = "", content: UIScrollViewDelegate) {
         // add space if exist to separate following log
-        self.filterKey = key.characters.count == 0 ? "" : "\(key) "
+        self.filterKey = key.count == 0 ? "" : "\(key) "
         self.decorated = content
     }
     

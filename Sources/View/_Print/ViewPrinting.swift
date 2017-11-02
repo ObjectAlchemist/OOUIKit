@@ -14,7 +14,7 @@ public final class ViewPrinting: OOView {
     
     public init(markedWith key: String = "", content: OOView) {
         // add space if exist to separate following log
-        self.filterKey = key.characters.count == 0 ? "" : "\(key) "
+        self.filterKey = key.count == 0 ? "" : "\(key) "
         self.decorated = content
     }
     
