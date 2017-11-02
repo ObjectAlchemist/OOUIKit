@@ -19,9 +19,9 @@ import UIKit
  @UIApplicationMain
  final class MyAppDelegate: UIApplicationDelegateWrap {
     init() {
-        super.init(origin: ApplicationDelegateSplitting(delegates: [
-            ApplicationDelegateInitializing(..),
-            ApplicationDelegateSystemEvents(..),
+        super.init(origin: UIApplicationDelegateSplitting(delegates: [
+            UIApplicationDelegateInitialize(..),
+            UIApplicationDelegateOpenURL(..),
             ...
         ]))
     }

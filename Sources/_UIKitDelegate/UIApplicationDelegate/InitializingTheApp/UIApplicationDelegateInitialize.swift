@@ -1,5 +1,5 @@
 //
-//  UIApplicationDelegateInitializing.swift
+//  UIApplicationDelegateInitialize.swift
 //  OOSwift
 //
 //  Created by Karsten Litsche on 28.10.17.
@@ -15,7 +15,7 @@ import OOBase
  - Providing a Window for Storyboarding
  See documentation of UIApplicationDelegate for more informations.
  */
-public final class UIApplicationDelegateInitializing: UIResponder, UIApplicationDelegate {
+public final class UIApplicationDelegateInitialize: UIResponder, UIApplicationDelegate {
     
     // MARK: - init
     
@@ -61,7 +61,7 @@ public final class UIApplicationDelegateInitializing: UIResponder, UIApplication
 }
 
 // convenience initializer
-public extension UIApplicationDelegateInitializing {
+public extension UIApplicationDelegateInitialize {
 
     public convenience init(screenFlow: OOScreen) {
         self.init(didFinishLaunchingWithOptions: { application,_ in

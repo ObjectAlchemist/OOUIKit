@@ -1,5 +1,5 @@
 //
-//  UIApplicationDelegateInitializingPrinting.swift
+//  UIApplicationDelegateInitializePrinting.swift
 //  OOSwift
 //
 //  Created by Karsten Litsche on 28.10.17.
@@ -17,7 +17,7 @@ import UIKit
  clear identification of this instance.
  For more informations see UIPrintOverload.swift and UIApplicationDelegate documentation
  */
-public final class UIApplicationDelegateInitializingPrinting: UIResponder, UIApplicationDelegate {
+public final class UIApplicationDelegateInitializePrinting: UIResponder, UIApplicationDelegate {
     
     // MARK: - init
     

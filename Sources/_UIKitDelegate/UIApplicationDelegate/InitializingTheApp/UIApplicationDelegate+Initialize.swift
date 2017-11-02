@@ -1,5 +1,5 @@
 //
-//  UIApplicationDelegate+Initializing.swift
+//  UIApplicationDelegate+Initialize.swift
 //  OOSwift
 //
 //  Created by Karsten Litsche on 02.11.17.
