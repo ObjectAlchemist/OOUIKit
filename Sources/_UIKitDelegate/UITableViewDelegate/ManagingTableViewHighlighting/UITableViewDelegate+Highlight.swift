@@ -1,0 +1,43 @@
+//
+//  UITableViewDelegate+Highlight.swift
+//  OOUIKit
+//
+//  Created by Karsten Litsche on 04.11.17.
+//
+
+import UIKit
+
+public extension UITableViewDelegateWrap {
+    
+    public final func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return origin.tableView?(tableView, shouldHighlightRowAt: indexPath) ?? true
+    }
+    
+    public final func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        origin.tableView?(tableView, didHighlightRowAt: indexPath)
+    }
+    
+    public final func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        origin.tableView?(tableView, didUnhighlightRowAt: indexPath)
+    }
+    
+}
+
+public extension UITableViewDelegateSplitting {
+    
+    public final func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        for delegate in delegates {
+            if let result = delegate.tableView?(tableView, shouldHighlightRowAt: indexPath) { return result }
+        }
+        return true
+    }
+    
+    public final func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        delegates.forEach { $0.tableView?(tableView, didHighlightRowAt: indexPath) }
+    }
+    
+    public final func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        delegates.forEach { $0.tableView?(tableView, didUnhighlightRowAt: indexPath) }
+    }
+    
+}
