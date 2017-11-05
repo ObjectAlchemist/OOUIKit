@@ -31,8 +31,13 @@ open /*abstract*/ class UIApplicationDelegateWrap: UIResponder, UIApplicationDel
     
     // MARK: - init
     
+    convenience override init() {
+        fatalError("Not supported!")
+    }
+
     public init(origin: UIApplicationDelegate) {
         self.origin = origin
+        super.init()
     }
     
     // MARK: - api for extensions only
