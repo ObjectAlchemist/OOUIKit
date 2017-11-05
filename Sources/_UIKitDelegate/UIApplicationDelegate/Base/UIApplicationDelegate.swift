@@ -31,7 +31,7 @@ open /*abstract*/ class UIApplicationDelegateWrap: UIResponder, UIApplicationDel
     
     // MARK: - init
     
-    convenience override init() {
+    public convenience override init() {
         fatalError("Not supported!")
     }
 
