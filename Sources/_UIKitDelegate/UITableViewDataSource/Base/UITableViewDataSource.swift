@@ -29,6 +29,11 @@ open /*abstract*/ class UITableViewDataSourceWrap: NSObject, UITableViewDataSour
     
     // MARK: init
     
+    // Note: Has to be public, or the init of the wrap deriving classs will not be called!
+    public convenience override init() {
+        fatalError("Not supported!")
+    }
+    
     public init(origin: UITableViewDataSource) {
         self.origin = origin
     }

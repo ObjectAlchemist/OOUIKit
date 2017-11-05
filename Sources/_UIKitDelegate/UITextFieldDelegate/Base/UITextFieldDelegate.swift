@@ -28,6 +28,11 @@ open /*abstract*/ class UITextFieldDelegateWrap: NSObject, UITextFieldDelegate {
     
     // MARK: init
     
+    // Note: Has to be public, or the init of the wrap deriving classs will not be called!
+    public convenience override init() {
+        fatalError("Not supported!")
+    }
+    
     public init(origin: UITextFieldDelegate) {
         self.origin = origin
     }

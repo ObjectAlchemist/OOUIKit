@@ -31,7 +31,8 @@ open /*abstract*/ class UIApplicationDelegateWrap: UIResponder, UIApplicationDel
     
     // MARK: - init
     
-    convenience override init() {
+    // Note: Has to be public, or the init of the wrap deriving classs will not be called!
+    public convenience override init() {
         fatalError("Not supported!")
     }
 
