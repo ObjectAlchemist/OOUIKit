@@ -12,7 +12,7 @@ public final class UIScrollViewDelegateZoom: NSObject, UIScrollViewDelegate {
     
     // MARK: - init
     
-    public init(
+    fileprivate init(
         viewForZooming: @escaping (UIScrollView) -> OOView? = { _ in nil },
         willBeginZooming: @escaping (UIScrollView, UIView?) -> OOExecutable = { _,_ in DoNothing() },
         didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
@@ -49,5 +49,26 @@ public final class UIScrollViewDelegateZoom: NSObject, UIScrollViewDelegate {
     private let willBeginZooming: (UIScrollView, UIView?) -> OOExecutable
     private let didEndZooming: (UIScrollView, UIView?, CGFloat) -> OOExecutable
     private let didZoom: (UIScrollView) -> OOExecutable
+
+}
+
+public extension UIScrollViewDelegateZoom {
+    
+    public convenience init(
+        viewForZooming: @escaping (UIScrollView) -> OOView,
+        willBeginZooming: @escaping (UIScrollView, UIView?) -> OOExecutable = { _,_ in DoNothing() },
+        didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
+        didZoom: @escaping (UIScrollView) -> OOExecutable = { _ in DoNothing() }
+        ) {
+        self.init(viewForZooming: viewForZooming, willBeginZooming: willBeginZooming, didEndZooming: didEndZooming, didZoom: didZoom)
+    }
+    
+    public convenience init(
+        willBeginZooming: @escaping (UIScrollView, UIView?) -> OOExecutable = { _,_ in DoNothing() },
+        didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
+        didZoom: @escaping (UIScrollView) -> OOExecutable = { _ in DoNothing() }
+        ) {
+        self.init(viewForZooming: { _ in nil }, willBeginZooming: willBeginZooming, didEndZooming: didEndZooming, didZoom: didZoom)
+    }
 
 }
