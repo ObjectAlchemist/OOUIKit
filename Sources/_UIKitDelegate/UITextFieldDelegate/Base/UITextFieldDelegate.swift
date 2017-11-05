@@ -7,6 +7,23 @@
 
 import UIKit
 
+/**
+ Usage:
+ The UITextFieldDelegate protocol contains too much functionality for one implementation. Apple already split
+ it into sections in the documentation. We use the same sections here to split it too.
+ The base implementations (Wrap and Splitting) are implemented to be extended here, because splitting them into several
+ objects will not work. The specific implementations are splitted into objects with functionalities belonging together.
+ 
+ e.g.
+ Using only one functionality:
+ let myDelegate = UITextFieldDelegateEdit(...)
+ Using two or more functionalities:
+ let myDelegate = UITextFieldDelegateSplitting(delegates: [
+    UITextFieldDelegateEdit(..),
+    UITextFieldDelegateManage(..),
+    ...
+ ])
+ */
 open /*abstract*/ class UITextFieldDelegateWrap: NSObject, UITextFieldDelegate {
     
     // MARK: init

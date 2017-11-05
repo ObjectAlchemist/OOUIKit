@@ -10,14 +10,15 @@ import UIKit
 
 /**
  Usage:
- The UIApplicationDelegate protocol contains too much functionality for one implementation. Apple already split
- it into sections in the documentation. We use the same sections here to split too.
- The base implementations (Wrap and Splitting) are implemented to be extended here, because splitting into several
+ The UIScrollViewDelegate protocol contains too much functionality for one implementation. Apple already split
+ it into sections in the documentation. We use the same sections here to split it too.
+ The base implementations (Wrap and Splitting) are implemented to be extended here, because splitting them into several
  objects will not work. The specific implementations are splitted into objects with functionalities belonging together.
  
  e.g.
+ Using only one functionality:
  let myDelegate = UIScrollViewDelegateZoom(...)
- or
+ Using two or more functionalities:
  let myDelegate = UIScrollViewDelegateSplitting(delegates: [
     UIScrollViewDelegateZoom(..),
     UIScrollViewDelegateScrollAndDrag(..),
