@@ -15,14 +15,14 @@ public final class ViewTable: OOView {
     
     // MARK: init
     
-    public init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+    init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
          xibReuseIdentifier: [String] = [],
          style: UITableViewStyle = .plain,
          bundle: Bundle = Bundle.main,
-         dataSource: UITableViewDataSource,
-         delegate: UITableViewDelegate) {
-        self.dataSource = dataSource
-        self.delegate = delegate
+         optDataSource: UITableViewDataSource?,
+         optDelegate: UITableViewDelegate?) {
+        self.dataSource = optDataSource
+        self.delegate = optDelegate
         self.reuseIdentifier = reuseIdentifier
         self.xibReuseIdentifier = xibReuseIdentifier
         self.style = style
@@ -43,8 +43,8 @@ public final class ViewTable: OOView {
     
     // MARK: private
     
-    private let dataSource: UITableViewDataSource
-    private let delegate: UITableViewDelegate
+    private let dataSource: UITableViewDataSource?
+    private let delegate: UITableViewDelegate?
     private let reuseIdentifier: [(cellClass: AnyClass, identifier: String)]
     private let xibReuseIdentifier: [String]
     private let style: UITableViewStyle
@@ -53,7 +53,7 @@ public final class ViewTable: OOView {
     private func createView() -> UITableView {
         let view = UITableView(frame: CGRect.zero, style: style)
         if style == .grouped {
-            self.fix35PtBug(view: view)
+            fix35PtBug(view: view)
         }
         reuseIdentifier.forEach { view.register($0.cellClass, forCellReuseIdentifier: $0.identifier) }
         xibReuseIdentifier.forEach { view.register(UINib(nibName: $0, bundle: bundle), forCellReuseIdentifier: $0) }
@@ -67,6 +67,51 @@ public final class ViewTable: OOView {
         // see: https://stackoverflow.com/a/18938763/6595536
         view.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0.01))
         view.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0.01))
+    }
+    
+}
+
+// convenience initializer
+public extension ViewTable {
+    
+    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+                            xibReuseIdentifier: [String] = [],
+                            style: UITableViewStyle = .plain,
+                            bundle: Bundle = Bundle.main,
+                            dataSource: UITableViewDataSource,
+                            delegate: UITableViewDelegate) {
+        self.init(reuseIdentifier: reuseIdentifier,
+                  xibReuseIdentifier: xibReuseIdentifier,
+                  style: style,
+                  bundle: bundle,
+                  optDataSource: dataSource,
+                  optDelegate: delegate)
+    }
+    
+    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+                            xibReuseIdentifier: [String] = [],
+                            style: UITableViewStyle = .plain,
+                            bundle: Bundle = Bundle.main,
+                            dataSource: UITableViewDataSource) {
+        self.init(reuseIdentifier: reuseIdentifier,
+                  xibReuseIdentifier: xibReuseIdentifier,
+                  style: style,
+                  bundle: bundle,
+                  optDataSource: dataSource,
+                  optDelegate: nil)
+    }
+    
+    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+                            xibReuseIdentifier: [String] = [],
+                            style: UITableViewStyle = .plain,
+                            bundle: Bundle = Bundle.main,
+                            delegate: UITableViewDelegate) {
+        self.init(reuseIdentifier: reuseIdentifier,
+                  xibReuseIdentifier: xibReuseIdentifier,
+                  style: style,
+                  bundle: bundle,
+                  optDataSource: nil,
+                  optDelegate: delegate)
     }
     
 }
