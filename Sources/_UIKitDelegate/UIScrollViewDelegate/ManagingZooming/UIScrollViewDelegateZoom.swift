@@ -54,7 +54,7 @@ public final class UIScrollViewDelegateZoom: NSObject, UIScrollViewDelegate {
 
 public extension UIScrollViewDelegateZoom {
     
-    public convenience init(
+    convenience init(
         viewForZooming: @escaping (UIScrollView) -> OOView,
         willBeginZooming: @escaping (UIScrollView, UIView?) -> OOExecutable = { _,_ in DoNothing() },
         didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
@@ -63,7 +63,7 @@ public extension UIScrollViewDelegateZoom {
         self.init(viewForZooming: viewForZooming, willBeginZooming: willBeginZooming, didEndZooming: didEndZooming, didZoom: didZoom)
     }
     
-    public convenience init(
+    convenience init(
         willBeginZooming: @escaping (UIScrollView, UIView?) -> OOExecutable = { _,_ in DoNothing() },
         didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
         didZoom: @escaping (UIScrollView) -> OOExecutable = { _ in DoNothing() }

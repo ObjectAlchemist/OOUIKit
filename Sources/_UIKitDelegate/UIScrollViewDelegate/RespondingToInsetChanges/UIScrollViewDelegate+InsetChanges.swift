@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIScrollViewDelegateWrap {
     
-    public final func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
+    final func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
         origin.scrollViewDidChangeAdjustedContentInset?(scrollView)
     }
     
@@ -17,7 +17,7 @@ public extension UIScrollViewDelegateWrap {
 
 public extension UIScrollViewDelegateSplitting {
     
-    public final func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
+    final func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
         delegates.forEach { $0.scrollViewDidChangeAdjustedContentInset?(scrollView) }
     }
     

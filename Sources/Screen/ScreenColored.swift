@@ -42,11 +42,11 @@ public final class ScreenColored: OOScreen {
 // convenience initializer
 public extension ScreenColored {
     
-    public convenience init(color: OOColor) {
+    convenience init(color: OOColor) {
         self.init(color: color, optContent: nil)
     }
     
-    public convenience init(color: OOColor, content: OOScreen) {
+    convenience init(color: OOColor, content: OOScreen) {
         self.init(color: color, optContent: content)
     }
     

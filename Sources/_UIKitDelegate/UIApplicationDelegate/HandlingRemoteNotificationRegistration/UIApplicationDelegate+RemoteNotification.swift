@@ -15,15 +15,15 @@ import UIKit
  */
 public extension UIApplicationDelegateWrap {
     
-    public final func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    final func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         origin.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
     }
     
-    public final func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    final func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         origin.application?(application, didFailToRegisterForRemoteNotificationsWithError: error)
     }
     
-    public final func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
+    final func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
         if origin.application?(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler) == nil {
             completionHandler(.noData)
         }
@@ -38,15 +38,15 @@ public extension UIApplicationDelegateWrap {
  */
 public extension UIApplicationDelegateSplitting {
     
-    public func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         delegates.forEach { $0.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken) }
     }
     
-    public func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         delegates.forEach { $0.application?(application, didFailToRegisterForRemoteNotificationsWithError: error) }
     }
     
-    public func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
         for delegate in delegates {
             if let _ = delegate.application?(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler) { return }
         }

@@ -11,7 +11,7 @@ import OOBase
 
 public extension FloatConst {
     
-    public convenience init(_ value: CGFloat) {
+    convenience init(_ value: CGFloat) {
         self.init(Float(value))
     }
 

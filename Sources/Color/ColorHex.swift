@@ -49,15 +49,15 @@ public final class ColorHex: OOColor {
 // convenience initializer
 public extension ColorHex {
     
-    public convenience init(_ hexString: String, alpha: Float = 1) {
+    convenience init(_ hexString: String, alpha: Float = 1) {
         self.init(StringConst(hexString), alpha: FloatConst(alpha))
     }
     
-    public convenience init(_ hexString: String, alpha: OOFloat) {
+    convenience init(_ hexString: String, alpha: OOFloat) {
         self.init(StringConst(hexString), alpha: alpha)
     }
     
-    public convenience init(_ hexString: OOString, alpha: Float = 1) {
+    convenience init(_ hexString: OOString, alpha: Float = 1) {
         self.init(hexString, alpha: FloatConst(alpha))
     }
     

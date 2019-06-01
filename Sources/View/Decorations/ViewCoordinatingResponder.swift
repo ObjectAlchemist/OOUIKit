@@ -70,7 +70,7 @@ public final class ViewCoordinatingResponder: OOView {
 /** Convenience initializer. */
 public extension ViewCoordinatingResponder {
     
-    public convenience init(index: OOWritableInt & OOEventInform, responder: [OOView], content: OOView) {
+    convenience init(index: OOWritableInt & OOEventInform, responder: [OOView], content: OOView) {
         self.init(index: index, indexChangeListener: index, responder: responder, content: content)
     }
     

@@ -42,7 +42,7 @@ public final class ScreenSwitch: OOScreen {
 // convenience initializer
 public extension ScreenSwitch {
     
-    public convenience init(screenId: OOWritableInt & OOEventInform, screens: [(UIViewController) -> OOScreen]) {
+    convenience init(screenId: OOWritableInt & OOEventInform, screens: [(UIViewController) -> OOScreen]) {
         self.init(screenId: screenId, conditionChangeListener: screenId, screens: screens)
     }
     

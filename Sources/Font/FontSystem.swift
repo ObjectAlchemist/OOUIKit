@@ -47,7 +47,7 @@ public final class FontSystem: OOFont {
 // convenience initializer
 public extension FontSystem {
     
-    public convenience init(size: Int, weight: FontWeight = .regular) {
+    convenience init(size: Int, weight: FontWeight = .regular) {
         self.init(size: IntConst(size), weight: weight)
     }
     

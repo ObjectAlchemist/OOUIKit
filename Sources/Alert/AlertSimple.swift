@@ -37,15 +37,15 @@ public final class AlertSimple: OOAlert {
 // convenience initializer
 public extension AlertSimple {
     
-    public convenience init(title: String = "", text: String) {
+    convenience init(title: String = "", text: String) {
         self.init(title: StringConst(title), text: StringConst(text))
     }
     
-    public convenience init(title: String = "", text: OOString) {
+    convenience init(title: String = "", text: OOString) {
         self.init(title: StringConst(title), text: text)
     }
     
-    public convenience init(title: OOString, text: String) {
+    convenience init(title: OOString, text: String) {
         self.init(title: title, text: StringConst(text))
     }
     

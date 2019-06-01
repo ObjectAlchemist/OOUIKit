@@ -70,11 +70,11 @@ public final class ViewColored: OOView {
 // convenience initializer
 public extension ViewColored {
     
-    public convenience init(color: OOColor = ColorWhite, layoutMargin: LayoutMargin = LayoutMargin.none) {
+    convenience init(color: OOColor = ColorWhite, layoutMargin: LayoutMargin = LayoutMargin.none) {
         self.init(color: color, layoutMargin: layoutMargin, contained: nil)
     }
     
-    public convenience init(color: OOColor = ColorWhite, layoutMargin: LayoutMargin = LayoutMargin.none, content: OOView) {
+    convenience init(color: OOColor = ColorWhite, layoutMargin: LayoutMargin = LayoutMargin.none, content: OOView) {
         self.init(color: color, layoutMargin: layoutMargin, contained: content)
     }
     

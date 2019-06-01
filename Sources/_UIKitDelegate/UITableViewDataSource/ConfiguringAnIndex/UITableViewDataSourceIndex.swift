@@ -48,14 +48,14 @@ public final class UITableViewDataSourceIndex: NSObject, UITableViewDataSource {
 
 public extension UITableViewDataSourceIndex {
     
-    public convenience init(
+    convenience init(
         sectionIndexTitles: @escaping (UITableView) -> [OOString],
         sectionForSectionIndexTitle: @escaping (UITableView, String, Int) -> OOInt = { _,_,_ in IntConst(0) }
         ) {
         self.init(sectionIndexTitles: sectionIndexTitles, sectionForSectionIndexTitle: sectionForSectionIndexTitle)
     }
 
-    public convenience init(
+    convenience init(
         sectionForSectionIndexTitle: @escaping (UITableView, String, Int) -> OOInt = { _,_,_ in IntConst(0) }
         ) {
         self.init(sectionIndexTitles: { _ in nil }, sectionForSectionIndexTitle: sectionForSectionIndexTitle)

@@ -41,7 +41,7 @@ public final class ColorInverse: OOColor {
 // convenience initializer
 public extension ColorInverse {
     
-    public convenience init(_ decorated: UIColor) {
+    convenience init(_ decorated: UIColor) {
         self.init(ColorConst(decorated))
     }
     

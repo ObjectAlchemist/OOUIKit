@@ -74,7 +74,7 @@ public final class ViewTable: OOView {
 // convenience initializer
 public extension ViewTable {
     
-    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+    convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
                             style: UITableViewStyle = .plain,
                             bundle: Bundle = Bundle.main,
@@ -88,7 +88,7 @@ public extension ViewTable {
                   optDelegate: delegate)
     }
     
-    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+    convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
                             style: UITableViewStyle = .plain,
                             bundle: Bundle = Bundle.main,
@@ -101,7 +101,7 @@ public extension ViewTable {
                   optDelegate: nil)
     }
     
-    public convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
+    convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
                             style: UITableViewStyle = .plain,
                             bundle: Bundle = Bundle.main,

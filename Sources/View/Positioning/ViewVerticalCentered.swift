@@ -60,7 +60,7 @@ public final class ViewVerticalCentered: OOView {
 // convenience initializer
 public extension ViewVerticalCentered {
     
-    public convenience init(width: Float, content: OOView) {
+    convenience init(width: Float, content: OOView) {
         self.init(width: FloatConst(width), content: content)
     }
     

@@ -41,7 +41,7 @@ public final class StringHexFromColor: OOString {
 // convenience initializer
 public extension StringHexFromColor {
     
-    public convenience init(color: UIColor) {
+    convenience init(color: UIColor) {
         self.init(color: ColorConst(color))
     }
     

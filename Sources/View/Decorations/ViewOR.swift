@@ -77,7 +77,7 @@ public final class ViewOR: OOView {
 // convenience initializer
 public extension ViewOR {
     
-    public convenience init(condition: OOWritableBool & OOEventInform, isTrue primary: @escaping () -> OOView, isFalse secondary: @escaping () -> OOView) {
+    convenience init(condition: OOWritableBool & OOEventInform, isTrue primary: @escaping () -> OOView, isFalse secondary: @escaping () -> OOView) {
         self.init(condition: condition, conditionChangeListener: condition, isTrue: primary, isFalse: secondary)
     }
     

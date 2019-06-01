@@ -63,7 +63,7 @@ public final class UIApplicationDelegateInitialize: UIResponder, UIApplicationDe
 // convenience initializer
 public extension UIApplicationDelegateInitialize {
 
-    public convenience init(screenFlow: OOScreen) {
+    convenience init(screenFlow: OOScreen) {
         self.init(didFinishLaunchingWithOptions: { application,_ in
             BoolDoWhenGetValue(true, action:
                 DoSetScreenFlow(application: application, screenFlow: screenFlow)

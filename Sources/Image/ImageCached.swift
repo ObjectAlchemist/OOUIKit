@@ -36,7 +36,7 @@ public final class ImageCached: OOImage {
 // convenience initializer
 public extension ImageCached {
     
-    public convenience init(_ decorated: UIImage) {
+    convenience init(_ decorated: UIImage) {
         self.init(ImageConst(decorated))
     }
     

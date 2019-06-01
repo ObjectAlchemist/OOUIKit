@@ -63,7 +63,7 @@ public final class AlertWithAction: OOAlert {
 // convenience initializer
 public extension AlertWithAction {
     
-    public convenience init(_ decorated: OOAlert, text: String, action: OOExecutable = DoNothing(), style: ActionStyle = .normal) {
+    convenience init(_ decorated: OOAlert, text: String, action: OOExecutable = DoNothing(), style: ActionStyle = .normal) {
         self.init(decorated, text: StringConst(text), action: action, style: style)
     }
     

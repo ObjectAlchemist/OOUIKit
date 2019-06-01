@@ -37,15 +37,15 @@ public final class FontCustom: OOFont {
 // convenience initializer
 public extension FontCustom {
     
-    public convenience init(_ name: String, size: Int) {
+    convenience init(_ name: String, size: Int) {
         self.init(StringConst(name), size: IntConst(size))
     }
     
-    public convenience init(_ name: String, size: OOInt) {
+    convenience init(_ name: String, size: OOInt) {
         self.init(StringConst(name), size: size)
     }
     
-    public convenience init(_ name: OOString, size: Int) {
+    convenience init(_ name: OOString, size: Int) {
         self.init(name, size: IntConst(size))
     }
     

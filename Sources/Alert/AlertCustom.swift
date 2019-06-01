@@ -42,7 +42,7 @@ public final class AlertCustom: OOAlert {
 // convenience initializer
 public extension AlertCustom {
     
-    public convenience init(title: String = "", view: OOView) {
+    convenience init(title: String = "", view: OOView) {
         self.init(title: StringConst(title), view: view)
     }
     

@@ -40,15 +40,15 @@ public final class ViewCentered: OOViewWrap {
 // convenience initializer
 public extension ViewCentered {
     
-    public convenience init(width: Float, height: Float, content: OOView) {
+    convenience init(width: Float, height: Float, content: OOView) {
         self.init(width: FloatConst(width), height: FloatConst(height), content: content)
     }
     
-    public convenience init(width: Float, height: OOFloat, content: OOView) {
+    convenience init(width: Float, height: OOFloat, content: OOView) {
         self.init(width: FloatConst(width), height: height, content: content)
     }
     
-    public convenience init(width: OOFloat, height: Float, content: OOView) {
+    convenience init(width: OOFloat, height: Float, content: OOView) {
         self.init(width: width, height: FloatConst(height), content: content)
     }
     

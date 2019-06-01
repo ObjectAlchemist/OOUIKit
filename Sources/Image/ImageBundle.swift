@@ -37,7 +37,7 @@ public final class ImageBundle: OOImage {
 // convenience initializer
 public extension ImageBundle {
     
-    public convenience init(name: String, bundle: Bundle = Bundle.main) {
+    convenience init(name: String, bundle: Bundle = Bundle.main) {
         self.init(name: StringConst(name), bundle: bundle)
     }
     

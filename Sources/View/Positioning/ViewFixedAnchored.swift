@@ -83,39 +83,39 @@ public final class ViewFixedAnchored: OOView {
 // convenience initializer
 public extension ViewFixedAnchored {
     
-    public convenience init(leading: Float, trailing: Float, top: Float, bottom: Float, content: OOView) {
+    convenience init(leading: Float, trailing: Float, top: Float, bottom: Float, content: OOView) {
         self.init(width: nil, height: nil, leading: leading, trailing: trailing, top: top, bottom: bottom, content: content)
     }
     
-    public convenience init(height: Float, leading: Float, trailing: Float, top: Float, content: OOView) {
+    convenience init(height: Float, leading: Float, trailing: Float, top: Float, content: OOView) {
         self.init(width: nil, height: height, leading: leading, trailing: trailing, top: top, bottom: nil, content: content)
     }
     
-    public convenience init(height: Float, leading: Float, trailing: Float, bottom: Float, content: OOView) {
+    convenience init(height: Float, leading: Float, trailing: Float, bottom: Float, content: OOView) {
         self.init(width: nil, height: height, leading: leading, trailing: trailing, top: nil, bottom: bottom, content: content)
     }
     
-    public convenience init(width: Float, leading: Float, top: Float, bottom: Float, content: OOView) {
+    convenience init(width: Float, leading: Float, top: Float, bottom: Float, content: OOView) {
         self.init(width: width, height: nil, leading: leading, trailing: nil, top: top, bottom: bottom, content: content)
     }
     
-    public convenience init(width: Float, trailing: Float, top: Float, bottom: Float, content: OOView) {
+    convenience init(width: Float, trailing: Float, top: Float, bottom: Float, content: OOView) {
         self.init(width: width, height: nil, leading: nil, trailing: trailing, top: top, bottom: bottom, content: content)
     }
     
-    public convenience init(width: Float, height: Float, leading: Float, top: Float, content: OOView) {
+    convenience init(width: Float, height: Float, leading: Float, top: Float, content: OOView) {
         self.init(width: width, height: height, leading: leading, trailing: nil, top: top, bottom: nil, content: content)
     }
     
-    public convenience init(width: Float, height: Float, leading: Float, bottom: Float, content: OOView) {
+    convenience init(width: Float, height: Float, leading: Float, bottom: Float, content: OOView) {
         self.init(width: width, height: height, leading: leading, trailing: nil, top: nil, bottom: bottom, content: content)
     }
     
-    public convenience init(width: Float, height: Float, trailing: Float, top: Float, content: OOView) {
+    convenience init(width: Float, height: Float, trailing: Float, top: Float, content: OOView) {
         self.init(width: width, height: height, leading: nil, trailing: trailing, top: top, bottom: nil, content: content)
     }
     
-    public convenience init(width: Float, height: Float, trailing: Float, bottom: Float, content: OOView) {
+    convenience init(width: Float, height: Float, trailing: Float, bottom: Float, content: OOView) {
         self.init(width: width, height: height, leading: nil, trailing: trailing, top: nil, bottom: bottom, content: content)
     }
     

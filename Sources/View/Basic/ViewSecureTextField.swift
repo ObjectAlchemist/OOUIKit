@@ -64,19 +64,19 @@ public final class ViewSecureTextField: OOView {
 // convenience initializer
 public extension ViewSecureTextField {
     
-    public convenience init(value: OOWritableString, placeholder: String = "", isLast: Bool = true) {
+    convenience init(value: OOWritableString, placeholder: String = "", isLast: Bool = true) {
         self.init(value: value, placeholder: StringConst(placeholder), isLast: isLast)
     }
     
-    public convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true) {
+    convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true) {
         self.init(value: value, placeholder: placeholder, isLast: isLast, optDelegate: nil)
     }
     
-    public convenience init(value: OOWritableString, placeholder: String = "", isLast: Bool = true, delegate: UITextFieldDelegate) {
+    convenience init(value: OOWritableString, placeholder: String = "", isLast: Bool = true, delegate: UITextFieldDelegate) {
         self.init(value: value, placeholder: StringConst(placeholder), isLast: isLast, delegate: delegate)
     }
     
-    public convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true, delegate: UITextFieldDelegate) {
+    convenience init(value: OOWritableString, placeholder: OOString, isLast: Bool = true, delegate: UITextFieldDelegate) {
         self.init(value: value, placeholder: placeholder, isLast: isLast, optDelegate: delegate)
     }
     

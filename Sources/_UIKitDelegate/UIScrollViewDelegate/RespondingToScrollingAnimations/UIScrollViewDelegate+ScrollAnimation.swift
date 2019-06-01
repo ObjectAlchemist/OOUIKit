@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIScrollViewDelegateWrap {
     
-    public final func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    final func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         origin.scrollViewDidEndScrollingAnimation?(scrollView)
     }
     
@@ -17,7 +17,7 @@ public extension UIScrollViewDelegateWrap {
 
 public extension UIScrollViewDelegateSplitting {
     
-    public final func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    final func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         delegates.forEach { $0.scrollViewDidEndScrollingAnimation?(scrollView) }
     }
     

@@ -41,7 +41,7 @@ public final class ViewRoundedEdges: OOView {
 // convenience initializer
 public extension ViewRoundedEdges {
     
-    public convenience init(cornerRadius: Float, content decorated: OOView) {
+    convenience init(cornerRadius: Float, content decorated: OOView) {
         self.init(cornerRadius: FloatConst(cornerRadius), content: decorated)
     }
     

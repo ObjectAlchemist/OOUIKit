@@ -66,7 +66,7 @@ public final class ViewHorizontalCentered: OOView {
 // convenience initializer
 public extension ViewHorizontalCentered {
     
-    public convenience init(height: Float, content: OOView) {
+    convenience init(height: Float, content: OOView) {
         self.init(height: FloatConst(height), content: content)
     }
     

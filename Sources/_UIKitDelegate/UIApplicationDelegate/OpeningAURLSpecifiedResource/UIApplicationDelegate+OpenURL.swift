@@ -15,7 +15,7 @@ import UIKit
  */
 public extension UIApplicationDelegateWrap {
     
-    public final func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    final func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         return origin.application?(app, open: url, options: options) ?? false
     }
     
@@ -28,7 +28,7 @@ public extension UIApplicationDelegateWrap {
  */
 public extension UIApplicationDelegateSplitting {
     
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         for delegate in delegates {
             if let result = delegate.application?(app, open: url, options: options) { return result }
         }

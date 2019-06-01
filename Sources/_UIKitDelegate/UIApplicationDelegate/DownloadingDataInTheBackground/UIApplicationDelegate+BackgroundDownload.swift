@@ -15,13 +15,13 @@ import UIKit
  */
 public extension UIApplicationDelegateWrap {
     
-    public final func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
+    final func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
         if origin.application?(application, performFetchWithCompletionHandler: completionHandler) == nil {
             completionHandler(.noData)
         }
     }
     
-    public final func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
+    final func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
         if origin.application?(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler) == nil {
             completionHandler()
         }
@@ -36,14 +36,14 @@ public extension UIApplicationDelegateWrap {
  */
 public extension UIApplicationDelegateSplitting {
     
-    public func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Swift.Void) {
         for delegate in delegates {
             if let _ = delegate.application?(application, performFetchWithCompletionHandler: completionHandler) { return }
         }
         completionHandler(.noData)
     }
     
-    public func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Swift.Void) {
         for delegate in delegates {
             if let _ = delegate.application?(application, handleEventsForBackgroundURLSession: identifier, completionHandler: completionHandler) { return }
         }
