@@ -19,7 +19,7 @@ public final class UIApplicationDelegateDisallowAppExtension: UIResponder, UIApp
     // MARK: - init
     
     public init(
-        shouldAllowExtensionPointIdentifier: @escaping (UIApplication, UIApplicationExtensionPointIdentifier) -> OOBool = { _,_ in BoolConst(true) }
+        shouldAllowExtensionPointIdentifier: @escaping (UIApplication, UIApplication.ExtensionPointIdentifier) -> OOBool = { _,_ in BoolConst(true) }
         ) {
         self.shouldAllowExtensionPointIdentifier = shouldAllowExtensionPointIdentifier
         super.init()
@@ -27,12 +27,12 @@ public final class UIApplicationDelegateDisallowAppExtension: UIResponder, UIApp
 
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+    public func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
         return shouldAllowExtensionPointIdentifier(application, extensionPointIdentifier).value
     }
     
     // MARK: - private
     
-    private let shouldAllowExtensionPointIdentifier: (UIApplication, UIApplicationExtensionPointIdentifier) -> OOBool
+    private let shouldAllowExtensionPointIdentifier: (UIApplication, UIApplication.ExtensionPointIdentifier) -> OOBool
     
 }

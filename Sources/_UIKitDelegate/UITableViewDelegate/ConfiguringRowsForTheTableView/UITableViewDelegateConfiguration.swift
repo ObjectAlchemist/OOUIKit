@@ -13,8 +13,8 @@ public final class UITableViewDelegateConfiguration: NSObject, UITableViewDelega
     // MARK: - init
     
     public init(
-        heightForRow: @escaping (UITableView, IndexPath) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
-        estimatedHeightForRow: @escaping (UITableView, IndexPath) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
+        heightForRow: @escaping (UITableView, IndexPath) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
+        estimatedHeightForRow: @escaping (UITableView, IndexPath) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
         indentationLevelForRow: @escaping (UITableView, IndexPath) -> OOInt = { _,_ in IntConst(1) },
         willDisplay: @escaping (UITableView, IndexPath) -> OOExecutable = { _,_ in DoNothing() },
         shouldSpringLoad: @escaping (UITableView, IndexPath, UISpringLoadedInteractionContext) -> OOBool = { _,_,_ in BoolConst(true) }

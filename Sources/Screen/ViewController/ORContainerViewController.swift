@@ -62,15 +62,15 @@ final class ORContainerViewController: UIViewController {
     private var currentChildScreen: OOScreen! // store it so screens with internal logic are not deinit!
 
     private func changeChildViewController() {
-        childViewControllers.forEach({
-            $0.willMove(toParentViewController: nil)
-            $0.removeFromParentViewController()
+        children.forEach({
+            $0.willMove(toParent: nil)
+            $0.removeFromParent()
         })
         currentChildScreen = primaryAvailable.value ? primary(self) : secondary(self)
         let childViewController = currentChildScreen.ui
-        addChildViewController(childViewController)
+        addChild(childViewController)
         containerView.set(childView: childViewController.view)
-        childViewController.didMove(toParentViewController: self)
+        childViewController.didMove(toParent: self)
     }
     
 }

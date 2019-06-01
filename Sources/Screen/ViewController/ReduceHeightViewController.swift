@@ -62,9 +62,9 @@ final class ReduceHeightViewController: UIViewController {
         bottomAnchor = containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -CGFloat(bottomGap.value))
         bottomAnchor!.isActive = true
         let contentViewController = content.ui
-        addChildViewController(contentViewController)
+        addChild(contentViewController)
         containerView.set(childView: contentViewController.view)
-        contentViewController.didMove(toParentViewController: self)
+        contentViewController.didMove(toParent: self)
     }
     
 }

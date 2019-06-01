@@ -229,7 +229,7 @@
 		20D393E68A2D20321EE2F562 /* UITableViewDelegateSectionHeaderAndFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateSectionHeaderAndFooter.swift; sourceTree = "<group>"; };
 		2112DD7275555CE51DB3A303 /* UITableViewDelegateConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateConfiguration.swift; sourceTree = "<group>"; };
 		24606834BDE8260620736F40 /* AlertSimple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertSimple.swift; sourceTree = "<group>"; };
-		2542BEFCEA33F34E3FC8B263 /* OOUIKit.pxproject */ = {isa = PBXFileReference; includeInIndex = 1; path = OOUIKit.pxproject; sourceTree = "<group>"; };
+		2542BEFCEA33F34E3FC8B263 /* OOUIKit.pxproject */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = OOUIKit.pxproject; sourceTree = "<group>"; };
 		265AF63817D935E1D8AC8994 /* PointInsideCheckingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PointInsideCheckingView.swift; sourceTree = "<group>"; };
 		26693AC96F5CC9F464F92E09 /* UITableViewDelegateRemove.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateRemove.swift; sourceTree = "<group>"; };
 		274447AC5DAFA67965F6316D /* UITableViewDelegateEdit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateEdit.swift; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 		327D63A6F2CBDBFF44CF953B /* ORContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ORContainerViewController.swift; sourceTree = "<group>"; };
 		34EB423F0D9BB5B0CDEB3EA7 /* DoSetScreenFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoSetScreenFlow.swift; sourceTree = "<group>"; };
 		364F6E7B28E5E92E4882981F /* UIScrollViewDelegateScrollAndDragPrinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegateScrollAndDragPrinting.swift; sourceTree = "<group>"; };
-		368486EE79A10B55650CD565 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		368486EE79A10B55650CD565 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		36DDD03EF3231D4B712E3583 /* UIScrollViewDelegate+ScrollAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScrollViewDelegate+ScrollAnimation.swift"; sourceTree = "<group>"; };
 		39017B5DE4C2467F5038ED18 /* UIApplicationDelegateRemoteNotificationPrinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIApplicationDelegateRemoteNotificationPrinting.swift; sourceTree = "<group>"; };
 		3A21A8451302E1F4F13B8D29 /* UITableViewDelegate+Edit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+Edit.swift"; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		6B012E51BA41038D3EA571E6 /* ViewOR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewOR.swift; sourceTree = "<group>"; };
 		6B80B48F323DBEF7A7CD5F82 /* ScreenWrappedAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenWrappedAlert.swift; sourceTree = "<group>"; };
 		6D07EE87AE8A800810449980 /* ColorInverse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorInverse.swift; sourceTree = "<group>"; };
-		6F761447E6D93B991BE931FB /* Cartfile */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartfile; sourceTree = "<group>"; };
+		6F761447E6D93B991BE931FB /* Cartfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		6F91484B662A7F32C77B42CE /* UITextFieldDelegate+Manage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextFieldDelegate+Manage.swift"; sourceTree = "<group>"; };
 		718D3F2279812742CC63039E /* ViewFixedAnchored.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFixedAnchored.swift; sourceTree = "<group>"; };
 		7360C00057906BF0D06D173A /* UITableViewDelegateAccessoryViewsPrinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateAccessoryViewsPrinting.swift; sourceTree = "<group>"; };
@@ -328,9 +328,9 @@
 		A82AB2961F51C211AACDC099 /* UITableViewDelegate+Remove.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+Remove.swift"; sourceTree = "<group>"; };
 		A8D942D525C0D25E89DD242B /* ScreenSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenSwitch.swift; sourceTree = "<group>"; };
 		A96C056ED991299871D42F7D /* ViewIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewIF.swift; sourceTree = "<group>"; };
-		ABDC2F1F1CB45E1D5C5B9742 /* Cartfile.resolved */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartfile.resolved; sourceTree = "<group>"; };
+		ABDC2F1F1CB45E1D5C5B9742 /* Cartfile.resolved */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		AC0E0BBF184520327EACDF10 /* UIApplicationDelegate+UserActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplicationDelegate+UserActivity.swift"; sourceTree = "<group>"; };
-		B08FE7BC3AB28451A6689D6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B08FE7BC3AB28451A6689D6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B1EB616BB5CC7453F74E5F5A /* UITableViewDelegateSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateSelection.swift; sourceTree = "<group>"; };
 		B2EC32F8E047F1F7DDA0CA57 /* UITableViewDelegateHighlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewDelegateHighlight.swift; sourceTree = "<group>"; };
 		B4442DA3BE7DEE1474FBA7DE /* FloatConst+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FloatConst+Extension.swift"; sourceTree = "<group>"; };
@@ -340,7 +340,7 @@
 		B9DFAD5D5B6E98D7940C8062 /* ViewEnabled.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewEnabled.swift; sourceTree = "<group>"; };
 		BAA90CA8DD4456F9AF5A27B7 /* SwitchContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwitchContainerViewController.swift; sourceTree = "<group>"; };
 		BD261F48648706F77B52B90B /* UITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegate.swift; sourceTree = "<group>"; };
-		C2DFC782A4934E327279359E /* Makefile */ = {isa = PBXFileReference; includeInIndex = 1; path = Makefile; sourceTree = "<group>"; };
+		C2DFC782A4934E327279359E /* Makefile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		C31CB8D5C60409912E82206F /* UITextFieldDelegateEdit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegateEdit.swift; sourceTree = "<group>"; };
 		C4195722FA927CA412C943B5 /* ScreenIF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenIF.swift; sourceTree = "<group>"; };
 		C4DA9547849E0E9D4DCC28B5 /* ViewCentered.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewCentered.swift; sourceTree = "<group>"; };
@@ -371,7 +371,7 @@
 		EBC0354320783CCB034FBBFE /* UITableViewDelegate+Highlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+Highlight.swift"; sourceTree = "<group>"; };
 		EC15839BE32BE75F7970AFB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3D71A3EFCCD4C834C73380 /* Release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		EC6EF8C95323030257D38DCB /* .gitignore */ = {isa = PBXFileReference; includeInIndex = 1; path = .gitignore; sourceTree = "<group>"; };
+		EC6EF8C95323030257D38DCB /* .gitignore */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ED09DDBC186F134DA30987E5 /* OOUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OOUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBE0741CF36B42BA4661369 /* UITableViewDelegate+AccessoryViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+AccessoryViews.swift"; sourceTree = "<group>"; };
 		EDEE49C0B7B936AE97957C1C /* UIApplicationDelegateInitializePrinting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIApplicationDelegateInitializePrinting.swift; sourceTree = "<group>"; };
@@ -421,7 +421,6 @@
 			children = (
 				BD261F48648706F77B52B90B /* UITextFieldDelegate.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -432,7 +431,6 @@
 				8008AF73568362A8AA8B6E00 /* UIApplicationDelegateDisallowAppExtension.swift */,
 				DD7C6C9285140433A9CD0207 /* UIApplicationDelegateDisallowAppExtensionPrinting.swift */,
 			);
-			name = DisallowingSpecifiedAppExtensionTypes;
 			path = DisallowingSpecifiedAppExtensionTypes;
 			sourceTree = "<group>";
 		};
@@ -463,7 +461,6 @@
 				C970910C957A3D5DD3123311 /* RespondingToScrollingAndDragging */,
 				31D54E12D3966D30E4BB8256 /* RespondingToScrollingAnimations */,
 			);
-			name = UIScrollViewDelegate;
 			path = UIScrollViewDelegate;
 			sourceTree = "<group>";
 		};
@@ -472,7 +469,6 @@
 			children = (
 				830FAA0C49893DDAED06B824 /* iOS */,
 			);
-			name = Build;
 			path = Build;
 			sourceTree = "<group>";
 		};
@@ -486,7 +482,6 @@
 				6D07EE87AE8A800810449980 /* ColorInverse.swift */,
 				811C826325951028D2BC0953 /* StringHexFromColor.swift */,
 			);
-			name = Color;
 			path = Color;
 			sourceTree = "<group>";
 		};
@@ -497,7 +492,6 @@
 				C31CB8D5C60409912E82206F /* UITextFieldDelegateEdit.swift */,
 				F9CFAA1F787B365F1C480D66 /* UITextFieldDelegateEditPrinting.swift */,
 			);
-			name = EditingTheTextFieldsText;
 			path = EditingTheTextFieldsText;
 			sourceTree = "<group>";
 		};
@@ -507,7 +501,6 @@
 				F10F5C081879FA5379FFCCC2 /* Debug.xcconfig */,
 				8A835ECDDC4EA1E933C42AA6 /* Release.xcconfig */,
 			);
-			name = Project;
 			path = Project;
 			sourceTree = "<group>";
 		};
@@ -518,7 +511,6 @@
 				2A7BFE8557658C2838FA87B6 /* UITableViewDataSourceReorder.swift */,
 				FE4E0002FD56DF949BE9FC29 /* UITableViewDataSourceReorderPrinting.swift */,
 			);
-			name = ReorderingTableRows;
 			path = ReorderingTableRows;
 			sourceTree = "<group>";
 		};
@@ -529,7 +521,6 @@
 				129BEF579F541F2238112655 /* EditingTheTextFieldsText */,
 				98AE042D4D3F45C2BB1C500E /* ManagingEditing */,
 			);
-			name = UITextFieldDelegate;
 			path = UITextFieldDelegate;
 			sourceTree = "<group>";
 		};
@@ -538,7 +529,6 @@
 			children = (
 				B4442DA3BE7DEE1474FBA7DE /* FloatConst+Extension.swift */,
 			);
-			name = CoreGraphics;
 			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
@@ -553,7 +543,6 @@
 				4E3C9BD2C7720B36BE2A3802 /* InitializingTheApp */,
 				79825869413A370E58451BF5 /* OpeningAURLSpecifiedResource */,
 			);
-			name = UIApplicationDelegate;
 			path = UIApplicationDelegate;
 			sourceTree = "<group>";
 		};
@@ -564,7 +553,6 @@
 				E87FE55D1F54B2A377D2396C /* UIScrollViewDelegateZoom.swift */,
 				A56572F981ADA7AE961B9444 /* UIScrollViewDelegateZoomPrinting.swift */,
 			);
-			name = ManagingZooming;
 			path = ManagingZooming;
 			sourceTree = "<group>";
 		};
@@ -575,7 +563,6 @@
 				318DDC8295FF920A2C91453D /* UIApplicationDelegateUserActivity.swift */,
 				DBCDFA9A55BE2E3BC9BAD64C /* UIApplicationDelegateUserActivityPrinting.swift */,
 			);
-			name = ContinuingUserActivityAndHandlingQuickActions;
 			path = ContinuingUserActivityAndHandlingQuickActions;
 			sourceTree = "<group>";
 		};
@@ -586,7 +573,6 @@
 				49F29745CCD062A196AB2358 /* Info.plist */,
 				EC3D71A3EFCCD4C834C73380 /* Release.xcconfig */,
 			);
-			name = Target;
 			path = Target;
 			sourceTree = "<group>";
 		};
@@ -595,7 +581,6 @@
 			children = (
 				100381875911187B022D64AB /* UIScrollViewDelegate.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -606,7 +591,6 @@
 				65247FDEDA5C8CB4BD62E53A /* UIScrollViewDelegateScrollAnimation.swift */,
 				9C19E723F95D3A8AC0050001 /* UIScrollViewDelegateScrollAnimationPrinting.swift */,
 			);
-			name = RespondingToScrollingAnimations;
 			path = RespondingToScrollingAnimations;
 			sourceTree = "<group>";
 		};
@@ -627,7 +611,6 @@
 				891893C5F32719CE705C5B93 /* TableCell */,
 				F974C7B9B0C4743CCC5A975E /* View */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -647,7 +630,6 @@
 				57B509FAFD52593FADDF5FA3 /* ReorderingTableRows */,
 				4C032516575D683E472CA1FB /* TrackingTheRemovalOfViews */,
 			);
-			name = UITableViewDelegate;
 			path = UITableViewDelegate;
 			sourceTree = "<group>";
 		};
@@ -656,7 +638,6 @@
 			children = (
 				97E7D7C7B879B6DAF1E16D96 /* UITableViewDataSource.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -667,7 +648,6 @@
 				20D393E68A2D20321EE2F562 /* UITableViewDelegateSectionHeaderAndFooter.swift */,
 				8A138EA310D00E3FEF3C5989 /* UITableViewDelegateSectionHeaderAndFooterPrinting.swift */,
 			);
-			name = ModifyingTheHeaderAndFooterOfSections;
 			path = ModifyingTheHeaderAndFooterOfSections;
 			sourceTree = "<group>";
 		};
@@ -678,7 +658,6 @@
 				B2EC32F8E047F1F7DDA0CA57 /* UITableViewDelegateHighlight.swift */,
 				90BA41F85C6876472CF70F05 /* UITableViewDelegateHighlightPrinting.swift */,
 			);
-			name = ManagingTableViewHighlighting;
 			path = ManagingTableViewHighlighting;
 			sourceTree = "<group>";
 		};
@@ -687,7 +666,6 @@
 			children = (
 				265AF63817D935E1D8AC8994 /* PointInsideCheckingView.swift */,
 			);
-			name = UIView;
 			path = UIView;
 			sourceTree = "<group>";
 		};
@@ -698,7 +676,6 @@
 				CC3F147AC8556901829BCE0D /* UITableViewDelegateAccessoryViews.swift */,
 				7360C00057906BF0D06D173A /* UITableViewDelegateAccessoryViewsPrinting.swift */,
 			);
-			name = ManagingAccessoryViews;
 			path = ManagingAccessoryViews;
 			sourceTree = "<group>";
 		};
@@ -709,7 +686,6 @@
 				26693AC96F5CC9F464F92E09 /* UITableViewDelegateRemove.swift */,
 				2B355331155BBC164DE462E9 /* UITableViewDelegateRemovePrinting.swift */,
 			);
-			name = TrackingTheRemovalOfViews;
 			path = TrackingTheRemovalOfViews;
 			sourceTree = "<group>";
 		};
@@ -720,7 +696,6 @@
 				C61D06E80A9F525439F6057A /* UIApplicationDelegateInitialize.swift */,
 				EDEE49C0B7B936AE97957C1C /* UIApplicationDelegateInitializePrinting.swift */,
 			);
-			name = InitializingTheApp;
 			path = InitializingTheApp;
 			sourceTree = "<group>";
 		};
@@ -731,7 +706,6 @@
 				9490540F29053A58A3766EA6 /* UITableViewDelegateReorder.swift */,
 				A720D7E0196C728FF508B2D9 /* UITableViewDelegateReorderPrinting.swift */,
 			);
-			name = ReorderingTableRows;
 			path = ReorderingTableRows;
 			sourceTree = "<group>";
 		};
@@ -742,7 +716,6 @@
 				86E4FFCC083B5850A7400BC5 /* UIApplicationDelegateRemoteNotification.swift */,
 				39017B5DE4C2467F5038ED18 /* UIApplicationDelegateRemoteNotificationPrinting.swift */,
 			);
-			name = HandlingRemoteNotificationRegistration;
 			path = HandlingRemoteNotificationRegistration;
 			sourceTree = "<group>";
 		};
@@ -755,7 +728,6 @@
 				6B012E51BA41038D3EA571E6 /* ViewOR.swift */,
 				1E3BBCB1C52A52F895F70AD7 /* ViewRoundedEdges.swift */,
 			);
-			name = Decorations;
 			path = Decorations;
 			sourceTree = "<group>";
 		};
@@ -766,7 +738,6 @@
 				05EC1248231EB1A16578B7F6 /* UITableViewDelegateSwipe.swift */,
 				D8CC79DF7B3793AA813D162D /* UITableViewDelegateSwipePrinting.swift */,
 			);
-			name = HandlingSwipeActions;
 			path = HandlingSwipeActions;
 			sourceTree = "<group>";
 		};
@@ -777,7 +748,6 @@
 				D11C55DE373CA340460D44FE /* UIApplicationDelegateOpenURL.swift */,
 				9B99B15132A9C47E61813CA1 /* UIApplicationDelegateOpenURLPrinting.swift */,
 			);
-			name = OpeningAURLSpecifiedResource;
 			path = OpeningAURLSpecifiedResource;
 			sourceTree = "<group>";
 		};
@@ -789,7 +759,6 @@
 				295F80E38FBC65E9E059F69A /* AlertWithAction.swift */,
 				6B80B48F323DBEF7A7CD5F82 /* ScreenWrappedAlert.swift */,
 			);
-			name = Alert;
 			path = Alert;
 			sourceTree = "<group>";
 		};
@@ -799,7 +768,6 @@
 				96482D56755EF6C5E7D99CAF /* OOBase.framework */,
 				D9B2A202B8E4B0B87F112374 /* OOFoundation.framework */,
 			);
-			name = iOS;
 			path = iOS;
 			sourceTree = "<group>";
 		};
@@ -810,7 +778,6 @@
 				2BF98D1D496B7D5A0BC46FCA /* Target */,
 				EB18F62B5BDA402EB2D1B70C /* TargetTests */,
 			);
-			name = Configuration;
 			path = Configuration;
 			sourceTree = "<group>";
 		};
@@ -819,7 +786,6 @@
 			children = (
 				98605FAFF519FFBB8B5E99EA /* TableCellDefault.swift */,
 			);
-			name = TableCell;
 			path = TableCell;
 			sourceTree = "<group>";
 		};
@@ -830,7 +796,6 @@
 				A47111C1BCF1CB94A8DB85CF /* UIApplicationDelegateBackgroundDownload.swift */,
 				FC2DA155284590ECA5692AA4 /* UIApplicationDelegateBackgroundDownloadPrinting.swift */,
 			);
-			name = DownloadingDataInTheBackground;
 			path = DownloadingDataInTheBackground;
 			sourceTree = "<group>";
 		};
@@ -841,7 +806,6 @@
 				274447AC5DAFA67965F6316D /* UITableViewDelegateEdit.swift */,
 				897CCCCA5C15D7E0EDF3AF58 /* UITableViewDelegateEditPrinting.swift */,
 			);
-			name = EditingTableRows;
 			path = EditingTableRows;
 			sourceTree = "<group>";
 		};
@@ -852,7 +816,6 @@
 				2112DD7275555CE51DB3A303 /* UITableViewDelegateConfiguration.swift */,
 				031B44737F82853731C975E6 /* UITableViewDelegateConfigurationPrinting.swift */,
 			);
-			name = ConfiguringRowsForTheTableView;
 			path = ConfiguringRowsForTheTableView;
 			sourceTree = "<group>";
 		};
@@ -864,7 +827,6 @@
 				B5575E70AC47514A8891A482 /* FontCustom.swift */,
 				F4089B957175F58379CA75B2 /* FontSystem.swift */,
 			);
-			name = Font;
 			path = Font;
 			sourceTree = "<group>";
 		};
@@ -875,7 +837,6 @@
 				7A7B83FFA4BAF48E96DB1A00 /* UITextFieldDelegateManage.swift */,
 				B7298B2D6B9F1C1D8C8CA635 /* UITextFieldDelegateManagePrinting.swift */,
 			);
-			name = ManagingEditing;
 			path = ManagingEditing;
 			sourceTree = "<group>";
 		};
@@ -894,7 +855,6 @@
 				662539E1525B426316939C97 /* ViewTextButton.swift */,
 				E39FFD92144907EBD2C201A2 /* ViewTextField.swift */,
 			);
-			name = Basic;
 			path = Basic;
 			sourceTree = "<group>";
 		};
@@ -910,7 +870,6 @@
 				457E026416E19BEC96557C8B /* SimpleViewController.swift */,
 				BAA90CA8DD4456F9AF5A27B7 /* SwitchContainerViewController.swift */,
 			);
-			name = ViewController;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -921,7 +880,6 @@
 				B1EB616BB5CC7453F74E5F5A /* UITableViewDelegateSelection.swift */,
 				DAC37F9085CE87B8A403669E /* UITableViewDelegateSelectionPrinting.swift */,
 			);
-			name = ManagingSelections;
 			path = ManagingSelections;
 			sourceTree = "<group>";
 		};
@@ -933,7 +891,6 @@
 				2AFFC679D3C83C3BED979F75 /* ImageConst.swift */,
 				D4D72F3045711D48AE8E19F0 /* ImageThreeVerticalDots.swift */,
 			);
-			name = Image;
 			path = Image;
 			sourceTree = "<group>";
 		};
@@ -942,7 +899,6 @@
 			children = (
 				4DE7D13E524757C30EEB1452 /* UIPrintOverload.swift */,
 			);
-			name = _Print;
 			path = _Print;
 			sourceTree = "<group>";
 		};
@@ -953,7 +909,6 @@
 				01E9E3CAA35538D27A3C7054 /* UITableViewDataSourceInsertAndDelete.swift */,
 				F93EA9AFB4CDCAC1EE22D13D /* UITableViewDataSourceInsertAndDeletePrinting.swift */,
 			);
-			name = InsertingOrDeletingTableRows;
 			path = InsertingOrDeletingTableRows;
 			sourceTree = "<group>";
 		};
@@ -976,7 +931,6 @@
 				90EE4B6B47F4D1DB9C5DF307 /* UITableViewDataSourceConfiguration.swift */,
 				F1DA7A812E64E1F196C322FD /* UITableViewDataSourceConfigurationPrinting.swift */,
 			);
-			name = ConfiguringATableView;
 			path = ConfiguringATableView;
 			sourceTree = "<group>";
 		};
@@ -987,7 +941,6 @@
 				1D5215E8E8D65C0ADEF9DB79 /* UIScrollViewDelegateScrollAndDrag.swift */,
 				364F6E7B28E5E92E4882981F /* UIScrollViewDelegateScrollAndDragPrinting.swift */,
 			);
-			name = RespondingToScrollingAndDragging;
 			path = RespondingToScrollingAndDragging;
 			sourceTree = "<group>";
 		};
@@ -1004,7 +957,6 @@
 				A8D942D525C0D25E89DD242B /* ScreenSwitch.swift */,
 				9EEAE651E9EB27C0FA1798CE /* ViewController */,
 			);
-			name = Screen;
 			path = Screen;
 			sourceTree = "<group>";
 		};
@@ -1019,7 +971,6 @@
 				2542BEFCEA33F34E3FC8B263 /* OOUIKit.pxproject */,
 				B08FE7BC3AB28451A6689D6C /* README.md */,
 			);
-			name = .;
 			path = .;
 			sourceTree = "<group>";
 		};
@@ -1029,7 +980,6 @@
 				34EB423F0D9BB5B0CDEB3EA7 /* DoSetScreenFlow.swift */,
 				4D4371EFB1DD38D76CF3170E /* UIApplicationDelegate.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1050,7 +1000,6 @@
 				39B4088851AC0DD94F2AB274 /* UITableViewDelegate */,
 				1BB4D2E9FFD58058C99D0C8B /* UITextFieldDelegate */,
 			);
-			name = _UIKitDelegate;
 			path = _UIKitDelegate;
 			sourceTree = "<group>";
 		};
@@ -1061,7 +1010,6 @@
 				7E9C7B56E72742CD9F003971 /* UITableViewDelegateFocus.swift */,
 				9384861963B6977020C33F71 /* UITableViewDelegateFocusPrinting.swift */,
 			);
-			name = ManagingTableViewFocus;
 			path = ManagingTableViewFocus;
 			sourceTree = "<group>";
 		};
@@ -1077,7 +1025,6 @@
 				F1A7C7FDDC64B2343588D05E /* OOTableCell.swift */,
 				0F4F609467093F0C71C623BB /* OOView.swift */,
 			);
-			name = _Protocol;
 			path = _Protocol;
 			sourceTree = "<group>";
 		};
@@ -1088,7 +1035,6 @@
 				E551BA76367EC3DFB6353025 /* UITableViewDelegateCopyAndPaste.swift */,
 				53F0CFB3D6B87557C7AF7E12 /* UITableViewDelegateCopyAndPastePrinting.swift */,
 			);
-			name = CopyingAndPastingRowContent;
 			path = CopyingAndPastingRowContent;
 			sourceTree = "<group>";
 		};
@@ -1097,7 +1043,6 @@
 			children = (
 				08F6E92EE0CD769D20478328 /* Build */,
 			);
-			name = Carthage;
 			path = Carthage;
 			sourceTree = "<group>";
 		};
@@ -1115,7 +1060,6 @@
 				4558A54EC9C0B3F851D343E4 /* ViewStackVertical.swift */,
 				84ABE17B261657CD05B17AC1 /* ViewVerticalCentered.swift */,
 			);
-			name = Positioning;
 			path = Positioning;
 			sourceTree = "<group>";
 		};
@@ -1126,7 +1070,6 @@
 				EC15839BE32BE75F7970AFB4 /* Info.plist */,
 				185EFAB5239F80FECFC6E368 /* Release.xcconfig */,
 			);
-			name = TargetTests;
 			path = TargetTests;
 			sourceTree = "<group>";
 		};
@@ -1136,7 +1079,6 @@
 				4A897BAA8C6E995FD6C06FE5 /* BezierPathArrowDown.swift */,
 				E2E704193784D67C2EE91327 /* BezierPathPlus.swift */,
 			);
-			name = BezierPath;
 			path = BezierPath;
 			sourceTree = "<group>";
 		};
@@ -1147,7 +1089,6 @@
 				40B92A0AF58DE38FCFEC588C /* UITableViewDataSourceIndex.swift */,
 				FB4477126CBB19D5AAE47FC4 /* UITableViewDataSourceIndexPrinting.swift */,
 			);
-			name = ConfiguringAnIndex;
 			path = ConfiguringAnIndex;
 			sourceTree = "<group>";
 		};
@@ -1158,7 +1099,6 @@
 				E86FA6CDB5955A12D4EE4721 /* UIScrollViewDelegateInsetChanges.swift */,
 				87516A09AFE80FBE9F1458EB /* UIScrollViewDelegateInsetChangesPrinting.swift */,
 			);
-			name = RespondingToInsetChanges;
 			path = RespondingToInsetChanges;
 			sourceTree = "<group>";
 		};
@@ -1167,7 +1107,6 @@
 			children = (
 				8395CC69BE7FB86B5AD5C4F2 /* UITableViewDelegate.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -1178,7 +1117,6 @@
 				A02A369A0626C0E59D63C053 /* DoOnKeyboardOpen.swift */,
 				0AC48AFE076296AA35FDD001 /* DoUpdateView.swift */,
 			);
-			name = BaseEnhancements;
 			path = BaseEnhancements;
 			sourceTree = "<group>";
 		};
@@ -1187,7 +1125,6 @@
 			children = (
 				CBC963C0170D888AE8C7E888 /* ViewPrinting.swift */,
 			);
-			name = _Print;
 			path = _Print;
 			sourceTree = "<group>";
 		};
@@ -1199,7 +1136,6 @@
 				6D854C1836D590E7AA957ECA /* Decorations */,
 				E8CF3EB8AED5CC50EB77F836 /* Positioning */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1212,7 +1148,6 @@
 				B5C977DCD75BA1E4E5E6DC0F /* InsertingOrDeletingTableRows */,
 				1A2E01B0F5AA571C629B2B93 /* ReorderingTableRows */,
 			);
-			name = UITableViewDataSource;
 			path = UITableViewDataSource;
 			sourceTree = "<group>";
 		};
@@ -1261,14 +1196,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					354881B95F972E75C8856202 = {
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					3D7B3A07908DBEA9B5DA5DDC = {
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 22864C2950AE5A48EEAB6233 /* Build configuration list for PBXProject "OOUIKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				Base,
 			);
 			mainGroup = B9751F97E795120CCAF83186;
 			productRefGroup = 058C6CFD6591C44830188030 /* Products */;

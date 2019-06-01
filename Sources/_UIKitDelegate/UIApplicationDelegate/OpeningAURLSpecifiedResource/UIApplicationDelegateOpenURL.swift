@@ -19,7 +19,7 @@ public final class UIApplicationDelegateOpenURL: UIResponder, UIApplicationDeleg
     // MARK: - init
     
     public init(
-        openUrl: @escaping (UIApplication, URL, [UIApplicationOpenURLOptionsKey : Any]) -> OOBool = { _,_,_ in BoolConst(false) }
+        openUrl: @escaping (UIApplication, URL, [UIApplication.OpenURLOptionsKey : Any]) -> OOBool = { _,_,_ in BoolConst(false) }
         ) {
         self.openUrl = openUrl
         super.init()
@@ -27,13 +27,13 @@ public final class UIApplicationDelegateOpenURL: UIResponder, UIApplicationDeleg
     
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return openUrl(app, url, options).value
     }
     
     // MARK: - private
     
-    private let openUrl: (UIApplication, URL, [UIApplicationOpenURLOptionsKey : Any]) -> OOBool
+    private let openUrl: (UIApplication, URL, [UIApplication.OpenURLOptionsKey : Any]) -> OOBool
     
 }
 

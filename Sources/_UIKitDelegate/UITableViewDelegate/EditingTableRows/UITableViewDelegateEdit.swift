@@ -15,7 +15,7 @@ public final class UITableViewDelegateEdit: NSObject, UITableViewDelegate {
     public init(
         willBeginEditingRow: @escaping (UITableView, IndexPath) -> OOExecutable = { _,_ in DoNothing() },
         didEndEditingRow: @escaping (UITableView, IndexPath?) -> OOExecutable = { _,_ in DoNothing() },
-        editingStyleForRow: @escaping (UITableView, IndexPath) -> UITableViewCellEditingStyle = { _,_ in .delete },
+        editingStyleForRow: @escaping (UITableView, IndexPath) -> UITableViewCell.EditingStyle = { _,_ in .delete },
         titleForDeleteConfirmationButtonForRow: @escaping (UITableView, IndexPath) -> OOString? = { _,_ in nil },
         shouldIndentWhileEditingRow: @escaping (UITableView, IndexPath) -> OOBool = { _,_ in BoolConst(true) }
         ) {
@@ -37,7 +37,7 @@ public final class UITableViewDelegateEdit: NSObject, UITableViewDelegate {
         didEndEditingRow(tableView, indexPath).execute()
     }
     
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return editingStyleForRow(tableView, indexPath)
     }
     
@@ -53,7 +53,7 @@ public final class UITableViewDelegateEdit: NSObject, UITableViewDelegate {
     
     private let willBeginEditingRow: (UITableView, IndexPath) -> OOExecutable
     private let didEndEditingRow: (UITableView, IndexPath?) -> OOExecutable
-    private let editingStyleForRow: (UITableView, IndexPath) -> UITableViewCellEditingStyle
+    private let editingStyleForRow: (UITableView, IndexPath) -> UITableViewCell.EditingStyle
     private let titleForDeleteConfirmationButtonForRow: (UITableView, IndexPath) -> OOString?
     private let shouldIndentWhileEditingRow: (UITableView, IndexPath) -> OOBool
 

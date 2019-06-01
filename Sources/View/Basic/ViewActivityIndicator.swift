@@ -44,13 +44,13 @@ public final class ViewActivityIndicator: OOView {
     private let large: OOBool
     
     private func createView() -> UIActivityIndicatorView {
-        let view = UIActivityIndicatorView(activityIndicatorStyle: large.value ? .whiteLarge : .white)
+        let view = UIActivityIndicatorView(style: large.value ? .whiteLarge : .white)
         update(view: view)
         return view
     }
     
     private func update(view: UIActivityIndicatorView) {
-        view.activityIndicatorViewStyle = large.value ? .whiteLarge : .white
+        view.style = large.value ? .whiteLarge : .white
         view.color = color.value
         if shouldRun.value {
             view.startAnimating()

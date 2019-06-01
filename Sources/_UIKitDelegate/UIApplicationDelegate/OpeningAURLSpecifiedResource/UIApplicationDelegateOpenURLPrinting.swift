@@ -32,7 +32,7 @@ public final class UIApplicationDelegateOpenURLPrinting: UIResponder, UIApplicat
     
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         printUI("\(filterKey)application openUrl called (\n  url=\(url.absoluteString)\n  options=\(options)\n)")
         return decorated.application?(app, open: url, options: options) ?? false
     }

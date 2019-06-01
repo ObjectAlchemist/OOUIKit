@@ -33,13 +33,13 @@ public final class UIApplicationDelegateInitializePrinting: UIResponder, UIAppli
     
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let options = launchOptions == nil ? "nil" : "\(launchOptions!)"
         printUI("\(filterKey)application willFinishLaunchingWithOptions called (\n  launchOptions=\(options)\n)")
         return decorated.application?(application, willFinishLaunchingWithOptions: launchOptions) ?? false
     }
     
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let options = launchOptions == nil ? "nil" : "\(launchOptions!)"
         printUI("\(filterKey)application didFinishLaunchingWithOptions called (\n  launchOptions=\(options)\n)")
         return decorated.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? false

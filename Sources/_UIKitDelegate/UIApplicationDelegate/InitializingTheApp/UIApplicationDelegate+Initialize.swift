@@ -16,11 +16,11 @@ import UIKit
 */
 public extension UIApplicationDelegateWrap {
     
-    final func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    final func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         return origin.application?(application, willFinishLaunchingWithOptions: launchOptions) ?? true
     }
     
-    final func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    final func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return origin.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true
     }
     
@@ -43,14 +43,14 @@ public extension UIApplicationDelegateWrap {
  */
 public extension UIApplicationDelegateSplitting {
     
-    final func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    final func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         for delegate in delegates {
             if let result = delegate.application?(application, willFinishLaunchingWithOptions: launchOptions) { return result }
         }
         return true
     }
     
-    final func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    final func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         for delegate in delegates {
             if let result = delegate.application?(application, didFinishLaunchingWithOptions: launchOptions) { return result }
         }

@@ -35,22 +35,22 @@ public final class UITableViewDelegateSectionHeaderAndFooterPrinting: NSObject, 
     
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         printUI("\(filterKey)table heightForHeaderInSection \(section) called")
-        return decorated.tableView?(tableView, heightForHeaderInSection: section) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, heightForHeaderInSection: section) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         printUI("\(filterKey)table estimatedHeightForHeaderInSection \(section) called")
-        return decorated.tableView?(tableView, estimatedHeightForHeaderInSection: section) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, estimatedHeightForHeaderInSection: section) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         printUI("\(filterKey)table heightForFooterInSection \(section) called")
-        return decorated.tableView?(tableView, heightForFooterInSection: section) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, heightForFooterInSection: section) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         printUI("\(filterKey)table estimatedHeightForFooterInSection \(section) called")
-        return decorated.tableView?(tableView, estimatedHeightForFooterInSection: section) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, estimatedHeightForFooterInSection: section) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

@@ -39,8 +39,8 @@ public final class UIApplicationDelegateUserActivity: UIResponder, UIApplication
         return willContinueUserActivity(application, userActivityType).value
     }
     
-    public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Swift.Void) -> Bool {
-        return continueUserActivity(application, userActivity, restorationHandler).value
+    public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Swift.Void) -> Bool {
+        return continueUserActivity(application, userActivity, restorationHandler as! ([Any]?) -> ()).value
     }
     
     public func application(_ application: UIApplication, didUpdate userActivity: NSUserActivity) {

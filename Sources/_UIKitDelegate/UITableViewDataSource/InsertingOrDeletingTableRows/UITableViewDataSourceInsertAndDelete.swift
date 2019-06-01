@@ -13,7 +13,7 @@ public final class UITableViewDataSourceInsertAndDelete: NSObject, UITableViewDa
     // MARK: - init
     
     public init(
-        commit: @escaping (UITableView, UITableViewCellEditingStyle, IndexPath) -> OOExecutable = { _,_,_ in DoNothing() },
+        commit: @escaping (UITableView, UITableViewCell.EditingStyle, IndexPath) -> OOExecutable = { _,_,_ in DoNothing() },
         canEditRow: @escaping (UITableView, IndexPath) -> OOBool = { _,_ in BoolConst(false) }
         ) {
         self.commit = commit
@@ -31,7 +31,7 @@ public final class UITableViewDataSourceInsertAndDelete: NSObject, UITableViewDa
         fatalError("This object do not provide configuration informations!")
     }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         commit(tableView, editingStyle, indexPath).execute()
     }
     
@@ -41,7 +41,7 @@ public final class UITableViewDataSourceInsertAndDelete: NSObject, UITableViewDa
     
     // MARK: - private
     
-    private let commit: (UITableView, UITableViewCellEditingStyle, IndexPath) -> OOExecutable
+    private let commit: (UITableView, UITableViewCell.EditingStyle, IndexPath) -> OOExecutable
     private let canEditRow: (UITableView, IndexPath) -> OOBool
 
 }

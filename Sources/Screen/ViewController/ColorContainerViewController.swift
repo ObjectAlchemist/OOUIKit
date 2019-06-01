@@ -51,9 +51,9 @@ final class ColorContainerViewController: UIViewController {
     
     private func addContentAsChild() {
         let contentViewController = content.ui
-        addChildViewController(contentViewController)
+        addChild(contentViewController)
         containerView.set(childView: contentViewController.view)
-        contentViewController.didMove(toParentViewController: self)
+        contentViewController.didMove(toParent: self)
     }
 
 }

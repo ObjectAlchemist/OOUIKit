@@ -32,7 +32,7 @@ public final class UIApplicationDelegateDisallowAppExtensionPrinting: UIResponde
     
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+    public func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
         printUI("\(filterKey)application shouldAllowExtensionPointIdentifier called (\n  extensionPointIdentifier=\(extensionPointIdentifier.rawValue)\n)")
         return decorated.application?(application, shouldAllowExtensionPointIdentifier: extensionPointIdentifier) ?? true
     }

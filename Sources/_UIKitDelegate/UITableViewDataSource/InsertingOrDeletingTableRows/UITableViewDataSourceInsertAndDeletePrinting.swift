@@ -31,7 +31,7 @@ public final class UITableViewDataSourceInsertAndDeletePrinting: NSObject, UITab
         fatalError("This object do not provide configuration informations!")
     }
     
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         printUI("\(filterKey)table commitEditingStyle \(editingStyle.rawValue) (\(indexPath.section)-\(indexPath.row)) called")
         decorated.tableView?(tableView, commit: editingStyle, forRowAt: indexPath)
     }

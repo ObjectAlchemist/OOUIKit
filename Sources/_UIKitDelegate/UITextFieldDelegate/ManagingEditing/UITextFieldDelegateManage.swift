@@ -16,7 +16,7 @@ public final class UITextFieldDelegateManage: NSObject, UITextFieldDelegate {
         shouldBeginEditing: @escaping (UITextField) -> OOBool = { _ in BoolConst(true) },
         didBeginEditing: @escaping (UITextField) -> OOExecutable = { _ in DoNothing() },
         shouldEndEditing: @escaping (UITextField) -> OOBool = { _ in BoolConst(true) },
-        didEndEditingReason: @escaping (UITextField, UITextFieldDidEndEditingReason) -> OOExecutable = { _,_ in DoNothing() },
+        didEndEditingReason: @escaping (UITextField, UITextField.DidEndEditingReason) -> OOExecutable = { _,_ in DoNothing() },
         didEndEditing: @escaping (UITextField) -> OOExecutable = { _ in DoNothing() }
         ) {
         self.shouldBeginEditing = shouldBeginEditing
@@ -41,7 +41,7 @@ public final class UITextFieldDelegateManage: NSObject, UITextFieldDelegate {
         return shouldEndEditing(textField).value
     }
     
-    public final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    public final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         didEndEditingReason(textField, reason).execute()
     }
 
@@ -54,7 +54,7 @@ public final class UITextFieldDelegateManage: NSObject, UITextFieldDelegate {
     private let shouldBeginEditing: (UITextField) -> OOBool
     private let didBeginEditing: (UITextField) -> OOExecutable
     private let shouldEndEditing: (UITextField) -> OOBool
-    private let didEndEditingReason: (UITextField, UITextFieldDidEndEditingReason) -> OOExecutable
+    private let didEndEditingReason: (UITextField, UITextField.DidEndEditingReason) -> OOExecutable
     private let didEndEditing: (UITextField) -> OOExecutable
     
 }

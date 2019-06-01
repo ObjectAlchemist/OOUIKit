@@ -10,11 +10,11 @@ import UIKit
 public extension UITableViewDelegateWrap {
     
     final func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return origin.tableView?(tableView, heightForRowAt: indexPath) ?? UITableViewAutomaticDimension
+        return origin.tableView?(tableView, heightForRowAt: indexPath) ?? UITableView.automaticDimension
     }
     
     final func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return origin.tableView?(tableView, estimatedHeightForRowAt: indexPath) ?? UITableViewAutomaticDimension
+        return origin.tableView?(tableView, estimatedHeightForRowAt: indexPath) ?? UITableView.automaticDimension
     }
     
     final func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
@@ -37,14 +37,14 @@ public extension UITableViewDelegateSplitting {
         for delegate in delegates {
             if let result = delegate.tableView?(tableView, heightForRowAt: indexPath) { return result }
         }
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     final func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         for delegate in delegates {
             if let result = delegate.tableView?(tableView, estimatedHeightForRowAt: indexPath) { return result }
         }
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     final func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {

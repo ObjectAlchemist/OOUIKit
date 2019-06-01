@@ -15,7 +15,7 @@ import UIKit
  */
 public extension UIApplicationDelegateWrap {
     
-    final func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+    final func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
         return origin.application?(application, shouldAllowExtensionPointIdentifier: extensionPointIdentifier) ?? true
     }
     
@@ -28,7 +28,7 @@ public extension UIApplicationDelegateWrap {
  */
 public extension UIApplicationDelegateSplitting {
     
-    func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+    func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
         for delegate in delegates {
             if let result = delegate.application?(application, shouldAllowExtensionPointIdentifier: extensionPointIdentifier) { return result }
         }

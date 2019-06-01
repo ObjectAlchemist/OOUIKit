@@ -19,7 +19,7 @@ public extension UIApplicationDelegateWrap {
         return origin.application?(application, willContinueUserActivityWithType: userActivityType) ?? false
     }
     
-    final func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Swift.Void) -> Bool {
+    final func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Swift.Void) -> Bool {
         // Note: calling the handler is optional
         return origin.application?(application, continue: userActivity, restorationHandler: restorationHandler) ?? false
     }
@@ -54,7 +54,7 @@ public extension UIApplicationDelegateSplitting {
         return false
     }
     
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Swift.Void) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Swift.Void) -> Bool {
         // Note: calling the handler is optional
         for delegate in delegates {
             if let result = delegate.application?(application, continue: userActivity, restorationHandler: restorationHandler) { return result }

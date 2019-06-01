@@ -60,14 +60,14 @@ final class SwitchContainerViewController: UIViewController {
     private var lastKnownScreenId: Int!
     
     private func changeChildViewController() {
-        childViewControllers.forEach({
-            $0.willMove(toParentViewController: nil)
-            $0.removeFromParentViewController()
+        children.forEach({
+            $0.willMove(toParent: nil)
+            $0.removeFromParent()
         })
         let childViewController = screens[lastKnownScreenId](self).ui
-        addChildViewController(childViewController)
+        addChild(childViewController)
         containerView.set(childView: childViewController.view)
-        childViewController.didMove(toParentViewController: self)
+        childViewController.didMove(toParent: self)
     }
     
 }

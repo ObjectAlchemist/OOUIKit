@@ -15,10 +15,10 @@ public final class UITableViewDelegateSectionHeaderAndFooter: NSObject, UITableV
     public init(
         viewForHeader: @escaping (UITableView, Int) -> OOView? = { _,_ in nil },
         viewForFooter: @escaping (UITableView, Int) -> OOView? = { _,_ in nil },
-        heightForHeader: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
-        estimatedHeightForHeader: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
-        heightForFooter: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
-        estimatedHeightForFooter: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableViewAutomaticDimension) },
+        heightForHeader: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
+        estimatedHeightForHeader: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
+        heightForFooter: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
+        estimatedHeightForFooter: @escaping (UITableView, Int) -> OOFloat = { _,_ in FloatConst(UITableView.automaticDimension) },
         willDisplayHeaderView: @escaping (UITableView, Int) -> OOExecutable = { _,_ in DoNothing() },
         willDisplayFooterView: @escaping (UITableView, Int) -> OOExecutable = { _,_ in DoNothing() }
         ) {

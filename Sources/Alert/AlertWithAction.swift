@@ -50,7 +50,7 @@ public final class AlertWithAction: OOAlert {
     private let action: OOExecutable
     private let style: ActionStyle
     
-    private var alertStyle: UIAlertActionStyle {
+    private var alertStyle: UIAlertAction.Style {
         switch style {
         case .normal: return .default
         case .cancel: return .cancel

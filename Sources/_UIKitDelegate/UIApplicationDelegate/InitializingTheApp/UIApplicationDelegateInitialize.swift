@@ -20,8 +20,8 @@ public final class UIApplicationDelegateInitialize: UIResponder, UIApplicationDe
     // MARK: - init
     
     public init(
-        willFinishLaunchingWithOptions: @escaping (UIApplication, [UIApplicationLaunchOptionsKey: Any]?) -> OOBool = { _,_ in BoolConst(true) },
-        didFinishLaunchingWithOptions: @escaping (UIApplication, [UIApplicationLaunchOptionsKey: Any]?) -> OOBool = { _,_ in BoolConst(true) },
+        willFinishLaunchingWithOptions: @escaping (UIApplication, [UIApplication.LaunchOptionsKey: Any]?) -> OOBool = { _,_ in BoolConst(true) },
+        didFinishLaunchingWithOptions: @escaping (UIApplication, [UIApplication.LaunchOptionsKey: Any]?) -> OOBool = { _,_ in BoolConst(true) },
         didFinishLaunching: @escaping (UIApplication) -> OOExecutable = { _ in DoNothing() },
         appWindow: UIWindow = UIWindow(frame: UIScreen.main.bounds)
         ) {
@@ -34,11 +34,11 @@ public final class UIApplicationDelegateInitialize: UIResponder, UIApplicationDe
 
     // MARK: - protocol: UIApplicationDelegate
     
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         return willFinishLaunchingWithOptions(application, launchOptions).value
     }
     
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return didFinishLaunchingWithOptions(application, launchOptions).value
     }
     
@@ -53,8 +53,8 @@ public final class UIApplicationDelegateInitialize: UIResponder, UIApplicationDe
   
     // MARK: - private
     
-    private let willFinishLaunchingWithOptions: (UIApplication, [UIApplicationLaunchOptionsKey: Any]?) -> OOBool
-    private let didFinishLaunchingWithOptions: (UIApplication, [UIApplicationLaunchOptionsKey: Any]?) -> OOBool
+    private let willFinishLaunchingWithOptions: (UIApplication, [UIApplication.LaunchOptionsKey: Any]?) -> OOBool
+    private let didFinishLaunchingWithOptions: (UIApplication, [UIApplication.LaunchOptionsKey: Any]?) -> OOBool
     private let didFinishLaunching: (UIApplication) -> OOExecutable
     private let appWindow: UIWindow
 

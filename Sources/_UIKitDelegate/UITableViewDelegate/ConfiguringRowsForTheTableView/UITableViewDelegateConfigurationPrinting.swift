@@ -25,12 +25,12 @@ public final class UITableViewDelegateConfigurationPrinting: NSObject, UITableVi
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         printUI("\(filterKey)table heightForRowAt (\(indexPath.section)-\(indexPath.row)) called")
-        return decorated.tableView?(tableView, heightForRowAt: indexPath) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, heightForRowAt: indexPath) ?? UITableView.automaticDimension
     }
     
     public func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         printUI("\(filterKey)table estimatedHeightForRowAt (\(indexPath.section)-\(indexPath.row)) called")
-        return decorated.tableView?(tableView, estimatedHeightForRowAt: indexPath) ?? UITableViewAutomaticDimension
+        return decorated.tableView?(tableView, estimatedHeightForRowAt: indexPath) ?? UITableView.automaticDimension
     }
 
     public func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {

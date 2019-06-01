@@ -17,7 +17,7 @@ public extension UITableViewDelegateWrap {
         origin.tableView?(tableView, didEndEditingRowAt: indexPath)
     }
     
-    final func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    final func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return origin.tableView?(tableView, editingStyleForRowAt: indexPath) ?? .delete
     }
     
@@ -41,7 +41,7 @@ public extension UITableViewDelegateSplitting {
         delegates.forEach { $0.tableView?(tableView, didEndEditingRowAt: indexPath) }
     }
     
-    final func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    final func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         for delegate in delegates {
             if let result = delegate.tableView?(tableView, editingStyleForRowAt: indexPath) { return result }
         }

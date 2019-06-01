@@ -9,7 +9,7 @@ import UIKit
 
 public extension UITableViewDataSourceWrap {
     
-    final func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    final func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         origin.tableView?(tableView, commit: editingStyle, forRowAt: indexPath)
     }
     
@@ -21,7 +21,7 @@ public extension UITableViewDataSourceWrap {
 
 public extension UITableViewDataSourceSplitting {
 
-    final func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    final func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         delegates.forEach { $0.tableView?(tableView, commit: editingStyle, forRowAt: indexPath) }
     }
     

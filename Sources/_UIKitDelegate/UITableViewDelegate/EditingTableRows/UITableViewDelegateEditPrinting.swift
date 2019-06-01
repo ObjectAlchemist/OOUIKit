@@ -33,7 +33,7 @@ public final class UITableViewDelegateEditPrinting: NSObject, UITableViewDelegat
         decorated.tableView?(tableView, didEndEditingRowAt: indexPath)
     }
     
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         printUI("\(filterKey)table editingStyleForRowAt (\(indexPath.section)-\(indexPath.row)) called")
         return decorated.tableView?(tableView, editingStyleForRowAt: indexPath) ?? .delete
     }

@@ -38,7 +38,7 @@ public final class UITextFieldDelegateManagePrinting: NSObject, UITextFieldDeleg
         return decorated.textFieldShouldEndEditing?(textField) ?? true
     }
     
-    public final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    public final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         printUI("\(filterKey)textfield didEndEditingReason called (\n  reason=\(reason.rawValue)\n)")
         decorated.textFieldDidEndEditing?(textField, reason: reason)
     }

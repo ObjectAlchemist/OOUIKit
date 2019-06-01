@@ -17,7 +17,7 @@ public final class ViewTable: OOView {
     
     init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
          xibReuseIdentifier: [String] = [],
-         style: UITableViewStyle = .plain,
+         style: UITableView.Style = .plain,
          bundle: Bundle = Bundle.main,
          optDataSource: UITableViewDataSource?,
          optDelegate: UITableViewDelegate?) {
@@ -47,7 +47,7 @@ public final class ViewTable: OOView {
     private let delegate: UITableViewDelegate?
     private let reuseIdentifier: [(cellClass: AnyClass, identifier: String)]
     private let xibReuseIdentifier: [String]
-    private let style: UITableViewStyle
+    private let style: UITableView.Style
     private let bundle: Bundle
     
     private func createView() -> UITableView {
@@ -76,7 +76,7 @@ public extension ViewTable {
     
     convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
-                            style: UITableViewStyle = .plain,
+                            style: UITableView.Style = .plain,
                             bundle: Bundle = Bundle.main,
                             dataSource: UITableViewDataSource,
                             delegate: UITableViewDelegate) {
@@ -90,7 +90,7 @@ public extension ViewTable {
     
     convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
-                            style: UITableViewStyle = .plain,
+                            style: UITableView.Style = .plain,
                             bundle: Bundle = Bundle.main,
                             dataSource: UITableViewDataSource) {
         self.init(reuseIdentifier: reuseIdentifier,
@@ -103,7 +103,7 @@ public extension ViewTable {
     
     convenience init(reuseIdentifier: [(cellClass: AnyClass, identifier: String)] = [],
                             xibReuseIdentifier: [String] = [],
-                            style: UITableViewStyle = .plain,
+                            style: UITableView.Style = .plain,
                             bundle: Bundle = Bundle.main,
                             delegate: UITableViewDelegate) {
         self.init(reuseIdentifier: reuseIdentifier,

@@ -21,7 +21,7 @@ public extension UITextFieldDelegateWrap {
         return origin.textFieldShouldEndEditing?(textField) ?? true
     }
     
-    final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         origin.textFieldDidEndEditing?(textField, reason: reason)
     }
     
@@ -51,7 +51,7 @@ public extension UITextFieldDelegateSplitting {
         return true
     }
     
-    final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    final func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         delegates.forEach { $0.textFieldDidEndEditing?(textField, reason: reason) }
     }
     

@@ -35,7 +35,7 @@ public final class DoOnKeyboardClose: OOExecutable {
         guard notification == nil else { fatalError("System notification adapter can only be executed once!") }
         let keyboardHeight = self.keyboardHeight
         let action = self.action
-        notification = notificationCenter.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: .main) { _ in
+        notification = notificationCenter.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { _ in
             keyboardHeight.value = 0
             action.execute()
         }

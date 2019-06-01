@@ -35,8 +35,8 @@ public final class DoOnKeyboardOpen: OOExecutable {
         guard notification == nil else { fatalError("System notification adapter can only be executed once!") }
         let keyboardHeight = self.keyboardHeight
         let action = self.action
-        notification = notificationCenter.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: .main) { notification in
-            let keyboardRect = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        notification = notificationCenter.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { notification in
+            let keyboardRect = notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
             keyboardHeight.value = Float(keyboardRect.cgRectValue.size.height)
             action.execute()
         }

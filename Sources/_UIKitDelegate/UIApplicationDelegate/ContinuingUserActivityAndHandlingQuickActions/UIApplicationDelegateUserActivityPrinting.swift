@@ -37,7 +37,7 @@ public final class UIApplicationDelegateUserActivityPrinting: UIResponder, UIApp
         return decorated.application?(application, willContinueUserActivityWithType: userActivityType) ?? false
     }
     
-    public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Swift.Void) -> Bool {
+    public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Swift.Void) -> Bool {
         // Note: calling the handler is optional
         printUI("\(filterKey)application continueUserActivity called (\n  userActivityType=\(userActivity.activityType)\n)")
         return decorated.application?(application, continue: userActivity, restorationHandler: restorationHandler) ?? false
