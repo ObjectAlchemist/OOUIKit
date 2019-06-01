@@ -1,2 +1,2 @@
-github "ObjectAlchemist/OOBase" ~> 1.0.0
-github "ObjectAlchemist/OOFoundation" ~> 1.0.0
+github "ObjectAlchemist/OOBase" ~> 1.2.1
+github "ObjectAlchemist/OOFoundation" ~> 1.0.1
