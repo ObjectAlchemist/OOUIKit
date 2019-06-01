@@ -52,6 +52,7 @@ public extension UITableViewDataSourceIndex {
         sectionIndexTitles: @escaping (UITableView) -> [OOString],
         sectionForSectionIndexTitle: @escaping (UITableView, String, Int) -> OOInt = { _,_,_ in IntConst(0) }
         ) {
+        let sectionIndexTitles: (UITableView) -> [OOString]? = sectionIndexTitles
         self.init(sectionIndexTitles: sectionIndexTitles, sectionForSectionIndexTitle: sectionForSectionIndexTitle)
     }
 

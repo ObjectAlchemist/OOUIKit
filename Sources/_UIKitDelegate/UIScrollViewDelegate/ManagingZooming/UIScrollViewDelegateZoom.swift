@@ -60,6 +60,7 @@ public extension UIScrollViewDelegateZoom {
         didEndZooming: @escaping (UIScrollView, UIView?, CGFloat) -> OOExecutable = { _,_,_ in DoNothing() },
         didZoom: @escaping (UIScrollView) -> OOExecutable = { _ in DoNothing() }
         ) {
+        let viewForZooming: (UIScrollView) -> OOView? = viewForZooming
         self.init(viewForZooming: viewForZooming, willBeginZooming: willBeginZooming, didEndZooming: didEndZooming, didZoom: didZoom)
     }
     
